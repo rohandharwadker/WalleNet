@@ -91,10 +91,15 @@ p {
 }
 
 .wb_head {
-    background-color: #ebebeb;
-    color: dimgray;
-    margin: 50px;
-    padding: 50px;
+  text-align: right;
+  background-color: #ebebeb;
+  color: dimgray;
+  margin: 50px;
+  padding: 50px;
+  background-image: url('pics/wblogo_dimgrey.png');
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 300px;
 }
 .wb_howItWorks{
     text-align:center;
