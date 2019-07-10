@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Website Builder - WN</title>
+  <link rel="icon" href="pics/WN_logo.PNG">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h3 class="head">WalleNet</h3>
+    <div class="links" id="navbar">
+        <div class="dropdown">
+            <a href="index.html"><button class="dropbtn logo"></button></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
+        </div>
+        <!-- <div class="dropdown">
+            <button class="dropbtn" id="nav_button_na"><a class="drop_head" href="na.html">Newly Added</a></button>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="na.html">All Games</a>
+                <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
+                <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+            </div>
+        </div> -->
+        
+    </div>
+
+
+    <div class="wb_head animated fadeInUp">
+        <h1>Stay focused on your business.</h1>
+        <h5>Running a business is hard. We can help you by making a website for you.</h3>
+    </div>
+    <div class="wb_howItWorks animated fadeInUp delay-1s">
+        <h1>How it works</h1>
+        <p>Using Website Builder is simple. All you have to do is fill out a form and we will communicate with you via email
+            to make your website is exactly what you want it to be.
+        </p>
+        <h5>Check out one of our websites <a class="textdec_none" target="none" href="C:\Users\RohanDhar\Desktop\RohanDhar\websites\bgstudio\bacongamingstudio.html">here</a>.</h5>
+    </div>
+    <div class="wb_pricing animated fadeInUp delay-2s">
+        <h1>Get it now</h1>
+        <p>To buy WN Website Builder, the cost is only done up-front. Yep, its that easy! Pay just once and then sit back; watch your website grow.
+            The cost is a $30 upfront fee with an additional $12 for every year the domain is to be active.
+        </p>
+    </div>
+    <div class="wb_howItWorks textdec_none animated fadeInUp delay-3s">
+        <h2>How to get it</h1>
+        <h4>Its pretty simple.</h4>
+        <p>Fill out <a target="none" href="https://forms.gle/Ywv12xyvLQeCWLKQA">this form</a>, and we'll send you an email response.</p>
+    </div>
+
+
+</body>
+</html>
+
+<script>    
+    window.onscroll = function() {
+    var nav = document.getElementById("navbar");
+    var nav_button_wb = document.getElementById("nav_button_wb")
+    var nav_button_na = document.getElementById("nav_button_na")
+    var nav_button_dg = document.getElementById("nav_button_dg")
+    var nav_button_about = document.getElementById("nav_button_about")
+    if ( window.pageYOffset > 100 ) {
+        nav.classList.add("links1");
+        nav_button_wb.classList.add("links1")
+        nav_button_na.classList.add("links1")
+        nav_button_dg.classList.add("links1")
+        nav_button_about.classList.add("links1")
+        // var nav_button_array = document.getElementsByClassName("dropbtn");
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className += " links1";
+        // }
+    } else { 
+        nav.classList.remove("links1");
+        nav_button_wb.classList.remove("links1")
+        nav_button_na.classList.remove("links1")
+        nav_button_dg.classList.remove("links1")
+        nav_button_about.classList.remove("links1")
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className -= "links1";
+        // }
+    }
+    }
+</script>

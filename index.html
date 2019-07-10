@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Home - WN</title>
+  <link rel="icon" href="pics/WN_logo2_grey.PNG">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h3 class="head animated bounceInLeft delay-0.5s">WalleNet</h3>
+    <div class="links" id="navbar">
+        <div class="dropdown">
+            <a href="index.html"><button class="dropbtn logo"></button></a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
+        </div>
+        <!-- <div class="dropdown">
+            <button class="dropbtn" id="nav_button_na"><a class="drop_head" href="na.html">Newly Added</a></button>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="na.html">All Games</a>
+                <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
+                <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+        </div> -->
+    </div>
+
+
+    <div class="main animated fadeInUp">
+        <h1>Introducing Website Builder.</h1>
+        <p>Need a website? We got you covered.</p>
+        <a href="wb.html">Learn More</a>
+    </div>
+
+    <div class="secondary">
+        <h1>Get a beautiful website without writing a single line of code.</h1>
+        <h4>Starting at $42*</h4>
+        <p>All you have to do is tell us what you want and we'll make it for you. Its that easy! <a href="wb.html">Get started!</a></p>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <img class="slide" src="pics/bg_add.PNG">
+            </div>
+        
+            <div class="mySlides fade">
+            <img class="slide" src="pics/bg_add2.PNG">
+            </div>
+        
+            <div class="mySlides fade">
+            <img class="slide" src="pics/bg_add3.PNG">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+<script>    
+    window.onscroll = function() {
+    var nav = document.getElementById("navbar");
+    var nav_button_wb = document.getElementById("nav_button_wb")
+    var nav_button_na = document.getElementById("nav_button_na")
+    var nav_button_dg = document.getElementById("nav_button_dg")
+    var nav_button_about = document.getElementById("nav_button_about")
+    if ( window.pageYOffset > 100 ) {
+        nav.classList.add("links1");
+        nav_button_wb.classList.add("links1")
+        nav_button_na.classList.add("links1")
+        nav_button_dg.classList.add("links1")
+        nav_button_about.classList.add("links1")
+        // var nav_button_array = document.getElementsByClassName("dropbtn");
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className += " links1";
+        // }
+    } else { 
+        nav.classList.remove("links1");
+        nav_button_wb.classList.remove("links1")
+        nav_button_na.classList.remove("links1")
+        nav_button_dg.classList.remove("links1")
+        nav_button_about.classList.remove("links1")
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className -= "links1";
+        // }
+    }
+    }
+</script>
