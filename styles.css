@@ -16,6 +16,15 @@ p {
     color:#004bc4;
 }
 
+.comments {
+  text-align:center;
+}
+.comment_container {
+  background-color: #ebebeb;
+  border-radius: 25px;
+  padding: 50px;
+  margin:100px;
+}
 
 /* dropdown */
 .links{
