@@ -145,6 +145,103 @@ p {
   text-decoration: none;
 }
 
+.song_container {
+  padding:10px;
+  margin:20px;
+}
+.gold {
+  color:gold;
+}
+.song-enter {
+  background-color: #f0f0f0;
+  border-radius: 100px;
+  text-align:center;
+  margin:120px;
+  padding: 50px;
+}
+.text-field {
+  border-radius: 25px;
+  width:300px;
+}
+input {
+  padding:10px;
+  border-top:#004bc4 solid 2px;
+  border-left: #004bc4 solid 2px;
+  border-right:#003489 solid 2px;
+  border-bottom:#003489 solid 2px;
+}
+select {
+  padding:10px;
+  border-radius: 25px;
+  border-top:#004bc4 solid 2px;
+  border-left: #004bc4 solid 2px;
+  border-right:#003489 solid 2px;
+  border-bottom:#003489 solid 2px;
+}
+.submit-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 100px;
+  color: white;
+  padding:10px;
+  border-radius: 20px;
+  background-color: #003489;
+  border:none;
+  /* border-top:#004bc4 solid 2px;
+  border-left: #004bc4 solid 2px;
+  border-right:#003489 solid 2px;
+  border-bottom:#003489 solid 2px; */
+}
+.submit-container {
+  margin-top:50px;
+}
+.stored-songs {
+  text-align:center;
+  padding:50px;
+  background-color: #f0f0f0;
+}
+.settings{
+  margin:25px;
+  margin-top:0px;
+  border:3px solid grey;
+}
+.settings-section {
+  margin:25px;
+  padding:30px;
+  margin-top:0px;
+}
+.settings-head {
+  margin:25px;
+  padding:25px;
+  margin-bottom: 0px;
+  background-color:#004bc4;
+  color:white;
+  font-size:20px;
+}
+.hr-settings{
+  margin-right:30px;
+  margin-left:30px;
+  background-color:grey;
+  height: 1px;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 slideshow */
 

@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Home - WN</title>
+  <title>Song Wizard - WN</title>
   <link rel="icon" href="pics/WN_logo2_grey.png">
   <meta name="description" content="The official site for WalleNet">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script> -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
 </head>
 
@@ -40,18 +44,61 @@
         </div>
     </div>
 
-    <div class="comment_container">
-        <!-- begin wwww.htmlcommentbox.com -->
-        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
-            <div class = "comments">
-                <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-                <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%246S.thpqJvg9WBKD%2FzfPWe0"+"&opts=16862&num=10&ts=1562965313284");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-                <!-- end www.htmlcommentbox.com -->
-            </div>
+
+    <form class="song-enter animated bounceInUp">
+        <h1 class="head">Song<span style="color:#003489">Wizard</span></h1>
+        <input id="name" class="text-field" type="text" placeholder="Song Name">
+        <input id="artist" class="text-field" type="text" placeholder="Artist">
+        <select id="rating">
+            <option value=0 selected=true>Rating</option>
+            <option value=1>1 star</option>
+            <option value=2>2 stars</option>
+            <option value=3>3 stars</option>
+            <option value=4>4 stars</option>
+            <option value=5>5 stars</option>
+        </select>
+        <div class="submit-container">
+            <input class="submit-button" onclick="write_song()" type="button" value="Submit">
         </div>
+    </form>
+    <div class="stored-songs">
+        <a id="stor-song"></a>
+        <h2 style="color: #003489; text-align: center;">Saved</h2>
+
     </div>
+    <!-- <div class="song_container">
+        <p>Star</p>
+        <span id="star1" class="fa fa-star" onclick="color()"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </div> -->
+
 </body>
 </html>
+
+
+<script>
+// $(".submit-button").click(function(){
+//     var newP = $('<p>');
+//     newP.text('');
+//     $('body').append(newP);
+// });
+
+function write_song() {
+    var name = document.getElementById('name').value
+    var artist = document.getElementById('artist').value
+    var rating = document.getElementById('rating').value
+    var newP = $('<p>');
+    if (name != "" && artist != "" && rating != 0) {
+        newP.text(name+" by "+artist+", "+rating+" stars");
+        $('.stored-songs').append(newP);
+        window.location.href = 'sw.html#stor-song';
+    }
+}
+</script>
+
+<!-- $(selector).addClass(classname,function(index,currentclass)) -->
+
 
 
 
@@ -105,9 +152,3 @@ function showSlides() {
     }
     }
 </script>
-
-
-
-
-
-

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h3 class="head">WalleNet</h3>
+    <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
     <div class="links" id="navbar">
         <div class="dropdown">
             <a href="index.html"><button class="dropbtn logo"></button></a>
@@ -22,15 +22,20 @@
         <div class="dropdown">
             <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
+        </div>
         <!-- <div class="dropdown">
-            <button class="dropbtn" id="nav_button_na"><a class="drop_head" href="na.html">Newly Added</a></button>
-            <div class="dropdown-content">
+            <button class="dropbtn" id="nav_button_sw"><a class="drop_head" href="sw.html">Song Wizard</a></button>
+        </div> -->
+        <div class="dropdown">
+            <!-- <button class="dropbtn" id="nav_button_fb"><a class="drop_head" href="fb.html">Feedback</a></button> -->
+            <!-- <div class="dropdown-content">
                 <a class="dropdown-item" href="na.html">All Games</a>
                 <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
                 <a class="dropdown-item" href="na.html#sttlr">Settler</a>
-            </div>
-        </div> -->
-        
+            </div> -->
+        </div>
     </div>
 
 
@@ -69,13 +74,13 @@
     var nav = document.getElementById("navbar");
     var nav_button_wb = document.getElementById("nav_button_wb")
     var nav_button_na = document.getElementById("nav_button_na")
-    var nav_button_dg = document.getElementById("nav_button_dg")
+    var nav_button_sw = document.getElementById("nav_button_sw")
     var nav_button_about = document.getElementById("nav_button_about")
     if ( window.pageYOffset > 100 ) {
         nav.classList.add("links1");
         nav_button_wb.classList.add("links1")
         nav_button_na.classList.add("links1")
-        nav_button_dg.classList.add("links1")
+        nav_button_sw.classList.add("links1")
         nav_button_about.classList.add("links1")
         // var nav_button_array = document.getElementsByClassName("dropbtn");
         // for(var i = 0; i < nav_button_array.length; i++)
@@ -86,7 +91,7 @@
         nav.classList.remove("links1");
         nav_button_wb.classList.remove("links1")
         nav_button_na.classList.remove("links1")
-        nav_button_dg.classList.remove("links1")
+        nav_button_sw.classList.remove("links1")
         nav_button_about.classList.remove("links1")
         // for(var i = 0; i < nav_button_array.length; i++)
         // {
