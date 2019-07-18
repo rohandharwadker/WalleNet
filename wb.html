@@ -71,37 +71,6 @@
     </div>
 
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="theme.js"></script>
 </body>
 </html>
-
-<script>    
-    window.onscroll = function() {
-    var nav = document.getElementById("navbar");
-    var nav_button_wb = document.getElementById("nav_button_wb")
-    var nav_button_na = document.getElementById("nav_button_na")
-    var nav_button_sw = document.getElementById("nav_button_sw")
-    var nav_button_about = document.getElementById("nav_button_about")
-    if ( window.pageYOffset > 100 ) {
-        nav.classList.add("links1");
-        nav_button_wb.classList.add("links1")
-        nav_button_na.classList.add("links1")
-        nav_button_sw.classList.add("links1")
-        nav_button_about.classList.add("links1")
-        // var nav_button_array = document.getElementsByClassName("dropbtn");
-        // for(var i = 0; i < nav_button_array.length; i++)
-        // {
-        //     nav_button_array[i].className += " links1";
-        // }
-    } else { 
-        nav.classList.remove("links1");
-        nav_button_wb.classList.remove("links1")
-        nav_button_na.classList.remove("links1")
-        nav_button_sw.classList.remove("links1")
-        nav_button_about.classList.remove("links1")
-        // for(var i = 0; i < nav_button_array.length; i++)
-        // {
-        //     nav_button_array[i].className -= "links1";
-        // }
-    }
-    }
-</script>

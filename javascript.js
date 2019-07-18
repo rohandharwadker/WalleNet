@@ -1,101 +1,59 @@
-var pIndex = 0;
-var pIndex2 = 0;
-if (document.title == "Home - WN") {
-    pIndex = 1;
-    pIndex2 = 1;
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-else if (document.title == "Website Builder - WN") {
-    pIndex = 0;
-    pIndex2 = 2;
-}
-else if (document.title == "Settings - WN") {
-    pIndex = 0
-    pIndex2 = 0
-}
-var ptag = document.getElementsByTagName("P")[pIndex];
-var ptag2 = document.getElementsByTagName("P")[pIndex2];
-var navbar = document.getElementById('navbar');
-var nav_button_wb = document.getElementById("nav_button_wb");
-var nav_button_fb = document.getElementById("nav_button_fb");
-var nav_button_sw = document.getElementById("nav_button_sw");
-var nav_button_set = document.getElementById("nav_button_set");
-var main = document.getElementById('main');
-var main2 = document.getElementById('main2');
-var logo = document.getElementById('logo');
-var bodytag = document.getElementById('bodytag');   
 
 
-
-// localStorage.removeItem("theme");
-// localStorage.theme = "light";
-function theme_load() {
-    
-    if (localStorage.theme == "light") {
-        ptag.style.color = 'black';
-        ptag2.style.color = 'black';
-        navbar.style.backgroundColor = 'white';
-        logo.style.backgroundColor = 'white';
-        nav_button_set.style.backgroundColor = 'white';
-        main.style.backgroundColor = '#ebebeb';
-        bodytag.style.backgroundColor = 'white';
-        nav_button_wb.style.backgroundColor = 'white';
-        main2.style.backgroundColor = '#ebebeb';
-        nav_button_fb.style.backgroundColor = 'white';
-        nav_button_sw.style.backgroundColor = 'white';
-    }
-    else if (localStorage.theme == "dark") {
-        ptag.style.color = 'grey';
-        ptag2.style.color = 'grey';
-        navbar.style.backgroundColor = 'black';
-        logo.style.backgroundColor = 'black';
-        nav_button_set.style.backgroundColor = 'black';
-        main.style.backgroundColor = '#303030';
-        bodytag.style.backgroundColor = 'black';
-        nav_button_wb.style.backgroundColor = 'black';
-        main2.style.backgroundColor = '#303030';
-        nav_button_fb.style.backgroundColor = 'black';
-        nav_button_sw.style.backgroundColor = 'black';
-        
-        
-    }
-    else {
-        localStorage.theme = "light";
+window.onscroll = function() {
+    var nav = document.getElementById("navbar");
+    var nav_button_wb = document.getElementById("nav_button_wb")
+    var nav_button_fb = document.getElementById("nav_button_fb")
+    var nav_button_sw = document.getElementById("nav_button_sw")
+    var nav_button_set = document.getElementById("nav_button_set")
+    if ( window.pageYOffset > 100 ) {
+        nav.classList.add("links1");
+        nav_button_wb.classList.add("links1")
+        nav_button_fb.classList.add("links1")
+        nav_button_sw.classList.add("links1")
+        nav_button_set.classList.add("links1")
+        // var nav_button_array = document.getElementsByClassName("dropbtn");
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className += " links1";
+        // }
+    } else { 
+        nav.classList.remove("links1");
+        nav_button_wb.classList.remove("links1")
+        nav_button_fb.classList.remove("links1")
+        nav_button_sw.classList.remove("links1")
+        nav_button_set.classList.remove("links1")
+        // for(var i = 0; i < nav_button_array.length; i++)
+        // {
+        //     nav_button_array[i].className -= "links1";
+        // }
     }
 }
 
-function theme_dark() {
-    localStorage.theme = "dark";
-    ptag.style.color = 'grey';
-    ptag2.style.color = 'grey';
-    navbar.style.backgroundColor = 'black';
-    logo.style.backgroundColor = 'black';
-    nav_button_set.style.backgroundColor = 'black';
-    main.style.backgroundColor = '#303030';
-    bodytag.style.backgroundColor = 'black';
-    nav_button_wb.style.backgroundColor = 'black';
-    main2.style.backgroundColor = '#303030';
-    nav_button_fb.style.backgroundColor = 'black';
-    nav_button_sw.style.backgroundColor = 'black';
-    
-}
-function theme_light() {
-    localStorage.theme = "light";
-    ptag.style.color = 'black';
-    ptag2.style.color = 'black';
-    navbar.style.backgroundColor = 'white';
-    logo.style.backgroundColor = 'white';
-    nav_button_set.style.backgroundColor = 'white';
-    main.style.backgroundColor = '#ebebeb';
-    bodytag.style.backgroundColor = 'white';
-    nav_button_wb.style.backgroundColor = 'white';
-    main2.style.backgroundColor = '#ebebeb';
-    nav_button_fb.style.backgroundColor = 'white';
-    nav_button_sw.style.backgroundColor = 'white';
-    
-}
-function check_theme() {
-    alert("The current theme is "+localStorage.theme+".");
-}
-function erase_theme(){
-    localStorage.removeItem("theme")
+
+
+function write_song() {
+    var name = document.getElementById('name').value
+    var artist = document.getElementById('artist').value
+    var rating = document.getElementById('rating').value
+    var newP = $('<p>');
+    if (name != "" && artist != "" && rating != 0) {
+        newP.text(name+" by "+artist+", "+rating+" stars");
+        $('.stored-songs').append(newP);
+        window.location.href = 'sw.html#stor-song';
+    }
 }
