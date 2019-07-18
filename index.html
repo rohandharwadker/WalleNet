@@ -10,17 +10,24 @@
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
 
 </head>
 
-<body>
+<body id="bodytag" onload="theme_load()">
+    <!-- <button class="theme_button" onclick="theme_light()">Enable Light Mode</button>
+    <button class="theme_button" onclick="theme_dark()">Enable Dark Mode! :)</button>
+    <button class="theme_button" onclick="check_theme()">Check Theme</button>
+    <button class="theme_button" onclick="erase_theme()">Erase Theme</button> -->
     <a id="index_top"></a>
     <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
     <div class="links" id="navbar">
-        <div class="dropdown">
-            <a href="index.html"><button class="dropbtn logo"></button></a>
+        <div id="wn-logo" class="dropdown">
+            <a href="index.html"><button id="logo" class="dropbtn logo"></button></a>
         </div>
         <div class="dropdown">
             <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
@@ -42,7 +49,7 @@
     </div>
 
 
-    <div class="main animated fadeInUp">
+    <div id="main" class="main animated fadeInUp">
         <h1>Introducing Website Builder.</h1>
         <p>Need a website? We got you covered.</p>
         <a href="wb.html">Learn More</a>
@@ -67,6 +74,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
 

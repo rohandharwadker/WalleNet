@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Home - WN</title>
+  <title>Settings - WN</title>
   <link rel="icon" href="pics/WN_logo2_grey.png">
   <meta name="description" content="The official site for WalleNet">
   <meta name="author" content="SitePoint">
@@ -15,38 +15,40 @@
 
 </head>
 
-<body>
-    <a id="index_top"></a>
-    <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
-    <div class="links" id="navbar">
-        <div class="dropdown">
-            <a href="index.html"><button class="dropbtn logo"></button></a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
-        </div>
-        <!-- <div class="dropdown">
-            <button class="dropbtn" id="nav_button_sw"><a class="drop_head" href="sw.html">Song Wizard</a></button>
-        </div> -->
-        <div class="dropdown">
-            <!-- <button class="dropbtn" id="nav_button_fb"><a class="drop_head" href="fb.html">Feedback</a></button> -->
-            <!-- <div class="dropdown-content">
-                <a class="dropdown-item" href="na.html">All Games</a>
-                <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
-                <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+<body id="bodytag" onload="theme_load()">
+        <a id="index_top"></a>
+        <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
+        <div class="links" id="navbar">
+            <div id="wn-logo" class="dropdown">
+                <a href="index.html"><button id="logo" class="dropbtn logo"></button></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
+            </div>
+            <!-- <div class="dropdown">
+                <button class="dropbtn" id="nav_button_sw"><a class="drop_head" href="sw.html">Song Wizard</a></button>
             </div> -->
+            <div class="dropdown">
+                <!-- <button class="dropbtn" id="nav_button_fb"><a class="drop_head" href="fb.html">Feedback</a></button> -->
+                <!-- <div class="dropdown-content">
+                    <a class="dropdown-item" href="na.html">All Games</a>
+                    <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
+                    <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+                </div> -->
+            </div>
         </div>
-    </div>
-    <div class="settings-head">
+
+    <div class="settings-head animated fadeInLeft">
         <h3>Settings</h3>
     </div>
-    <div class="settings">
+    <div class="settings animated fadeInUp">
         <div class="settings-section">
-            <h5 style="color:#004bc4;">Help</h5>
-            <a href="fb.html">Feedback Chat</a>
+            <h5 style="color:#004bc4;">Look and Feel</h5>
+            <button style="display: block; margin-top:10px;" class="theme_button" onclick="theme_light()">Enable Light Mode</button>
+            <button style="display: block; margin-top:10px;" class="theme_button" onclick="theme_dark()">Enable Dark Mode</button>
         </div>
         <hr class="hr-settings">
         <div class="settings-section">
@@ -54,14 +56,28 @@
             <a href="sw.html">Song Wizard</a>
             <p>All experimental pages are liable to have bugs and/or crashes</p>
         </div>
+        <hr class="hr-settings">
+        <div class="settings-section">
+            <h5 style="color:#004bc4;">Help</h5>
+            <a href="fb.html">Feedback Chat</a>
+            <button style="display: block; margin-top:10px;" class="theme_button" onclick="check_theme()">Check Theme</button>
+            <button style="display: block; margin-top:10px;" class="theme_button" onclick="erase_theme()">
+                <abbr class="textdec_none" title = "Resets theme to default">Clear Local Storage</abbr>
+            </button>
+        </div>
+        
+        
     </div>
+    <div id = "main"></div>
+    <div id = "main2"></div>
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
 
 
 
 
-<script>
+<!-- <script>
     var slideIndex = 0;
 showSlides();
 
@@ -76,7 +92,7 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-</script>
+</script> -->
 
 
 <script>    

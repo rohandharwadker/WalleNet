@@ -13,33 +13,38 @@
 
 </head>
 
-<body>
-    <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
-    <div class="links" id="navbar">
-        <div class="dropdown">
-            <a href="index.html"><button class="dropbtn logo"></button></a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
-        </div>
-        <!-- <div class="dropdown">
-            <button class="dropbtn" id="nav_button_sw"><a class="drop_head" href="sw.html">Song Wizard</a></button>
-        </div> -->
-        <div class="dropdown">
-            <!-- <button class="dropbtn" id="nav_button_fb"><a class="drop_head" href="fb.html">Feedback</a></button> -->
-            <!-- <div class="dropdown-content">
-                <a class="dropdown-item" href="na.html">All Games</a>
-                <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
-                <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+<body id="bodytag" onload="theme_load()">
+        <!-- <button class="theme_button" onclick="theme_light()">Enable Light Mode</button>
+        <button class="theme_button" onclick="theme_dark()">Enable Dark Mode! :)</button>
+        <button class="theme_button" onclick="check_theme()">Check Theme</button>
+        <button class="theme_button" onclick="erase_theme()">Erase Theme</button> -->
+        <a id="index_top"></a>
+        <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
+        <div class="links" id="navbar">
+            <div id="wn-logo" class="dropdown">
+                <a href="index.html"><button id="logo" class="dropbtn logo"></button></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
+            </div>
+            <!-- <div class="dropdown">
+                <button class="dropbtn" id="nav_button_sw"><a class="drop_head" href="sw.html">Song Wizard</a></button>
             </div> -->
+            <div class="dropdown">
+                <!-- <button class="dropbtn" id="nav_button_fb"><a class="drop_head" href="fb.html">Feedback</a></button> -->
+                <!-- <div class="dropdown-content">
+                    <a class="dropdown-item" href="na.html">All Games</a>
+                    <a class="dropdown-item" href="na.html#ff:2019">FF: 2019</a>
+                    <a class="dropdown-item" href="na.html#sttlr">Settler</a>
+                </div> -->
+            </div>
         </div>
-    </div>
 
 
-    <div class="wb_head animated fadeInUp">
+    <div id="main" class="wb_head animated fadeInUp">
         <h1>Stay focused on your business.</h1>
         <h5>Running a business is hard. We can help you by making a website for you.</h5>
         <a href="#get_wb" class="textdec_none">Lets do it!</a>
@@ -53,7 +58,7 @@
         <h5>Check out one of our websites <a class="textdec_none" target="none" href="https://rawbacononastick.github.io/BaconGaming/index.html">here</a>.</h5>
     </div>
     <a id="get_wb"></a>
-    <div class="wb_pricing">
+    <div id="main2" class="wb_pricing">
         <h1>Get it now</h1>
         <p>To buy WN Website Builder, the cost is only done up-front. Yep, its that easy! Pay just once and then sit back; watch your website grow.
             The cost is a $30 upfront fee with an additional $12 for every year the domain is to be active.
@@ -65,7 +70,7 @@
         <p>Fill out <a target="none" href="https://forms.gle/Ywv12xyvLQeCWLKQA">this form</a>, and we'll send you an email response.</p>
     </div>
 
-
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
 

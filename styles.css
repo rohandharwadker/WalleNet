@@ -37,7 +37,16 @@ p {
     z-index: 1;
     transition: .25s;
 }
-
+.theme_button{
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 20px; */
+  width: 100px;
+  color: white;
+  padding:5px;
+  border-radius: 25px;
+  background-color: #003489;
+  border:none;
+}
 /* Dropdown Button */
 .dropbtn {
     background-color:white;
