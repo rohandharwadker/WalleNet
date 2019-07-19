@@ -1,8 +1,8 @@
 var pIndex = 0;
 var pIndex2 = 0;
 if (document.title == "Home - WN") {
-    pIndex = 1;
-    pIndex2 = 1;
+    pIndex = 2;
+    pIndex2 = 2;
 }
 else if (document.title == "Website Builder - WN") {
     pIndex = 0;
