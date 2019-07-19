@@ -97,5 +97,6 @@ function check_theme() {
     alert("The current theme is "+localStorage.theme+".");
 }
 function erase_theme(){
-    localStorage.removeItem("theme")
+    localStorage.removeItem("theme");
+    localStorage.removeItem("visit");
 }

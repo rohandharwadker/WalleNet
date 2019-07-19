@@ -18,7 +18,7 @@
 
 </head>
 
-<body id="bodytag" onload="theme_load()">
+<body id="bodytag" onload="open_modal(),theme_load()">
     <!-- <button class="theme_button" onclick="theme_light()">Enable Light Mode</button>
     <button class="theme_button" onclick="theme_dark()">Enable Dark Mode! :)</button>
     <button class="theme_button" onclick="check_theme()">Check Theme</button>
@@ -48,6 +48,20 @@
         </div>
     </div>
 
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content animated fadeInDown">
+            <span class="close">&times;</span>
+            <h2>New Look!</h2>
+            <p>Try out the new dark theme! Find it at Settings > Look and Feel > Enable Dark Theme</p>
+            <h5><a class="textdec_none" href="settings.html">Try it out!</a></h5>
+        </div>
+
+    </div>
 
     <div id="main" class="main animated fadeInUp">
         <h1>Introducing Website Builder.</h1>
