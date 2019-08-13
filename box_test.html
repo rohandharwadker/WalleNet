@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Settings - WN</title>
+  <link rel="icon" href="pics/WN_logo2_grey.png">
+  <meta name="description" content="The official site for WalleNet">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
+
+</head>
+
+<body id="bodytag" onload="theme_load()">
+  <div class="beforeandafter">
+    <div class="before">
+      <h1>Head</h1>
+    </div>
+    <div class="after">
+      <h1>Head</h1>
+      <p>Text</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+  <style>
+  .beforeandafter{
+    width: 300px;
+    height: 300px;
+    overflow:hidden;
+    position: relative;
+  }
+  .before, .after{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow:hidden;
+    transition: 1s;
+    z-index: 2;
+  }
+  .after{
+  z-index: 1;
+  background-color: blue;
+  }
+  .before {
+    background-color:red;
+  }
+
+  .beforeandafter:hover .before{
+  height:0px;
+  }
+  </style>

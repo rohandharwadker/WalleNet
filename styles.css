@@ -233,15 +233,65 @@ select {
   height: 1px;
   border:none;
 }
+.cl_date {
+  padding:10px;
+  background-color:black;
+  color:white;
+}
+.app {
+  background-color: #fcfcfc;
+  border:#ebebeb solid 2px;
+  width:10%;
+  padding:20px;
+  margin:20px;
+  border-radius:10px;
+  text-align:center;
+  margin:80px;
+}
+.buy_button {
+  padding:5px;
+  border:none;
+  background-color:blue;
+  color:white;
+  border-radius:5px;
+}
+.app_img {
+  border: black solid 2px;
+  border-radius: 5px;
+}
 
 
 
 
 
 
+/* test */
 
+.beforeandafter{
+  width: 300px;
+  height: 300px;
+  overflow:hidden;
+  position: relative;
+}
+.before, .after{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  overflow:hidden;
+  transition: 1s;
+  z-index: 2;
+}
+.after{
+z-index: 1;
+background-color: blue;
+}
+.before {
+  background-color:red;
+}
 
-
+.beforeandafter:hover .before{
+height:0px;
+}
 
 
 
