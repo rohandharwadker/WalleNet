@@ -112,7 +112,15 @@ p {
     margin:25;
     padding:25px;
 }
-
+.app_ad {
+  background-color: #003489;
+  color: white;
+  text-align:center;
+  margin:70px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:60px;
+}
 .wb_head {
   text-align: right;
   background-color: #ebebeb;
@@ -286,7 +294,7 @@ select {
 }
 .app:hover {
   border: 2px solid black;
-  background-image: url('pics/ms_appCover.JPG');
+  background-image: url('pics/ms_appCover.jpg');
   background-size: cover;
   background-position: center;
   transition: .5s;
