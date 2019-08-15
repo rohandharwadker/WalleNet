@@ -6,7 +6,7 @@ body{
     font-family: "Google Sans","Roboto","Arial",sans-serif;
 }
 p {
-    color:black;
+  color:black;
 }
 .head {
     padding-left:10px;
@@ -59,6 +59,9 @@ p {
 .drop_head {
     text-decoration: none;
     color:#4d4d4d;
+} 
+.drop_head:hover {
+  color:#2c2c2c;
 }   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -142,7 +145,7 @@ p {
 }
 
 .links1 {
-    background-color: white;
+  background-color: white;
 }
 
 .bg_add {
@@ -259,8 +262,35 @@ select {
   border: black solid 2px;
   border-radius: 5px;
 }
-
-
+.app_desc {
+  color:#fcfcfc;
+  font-size: 12px;
+  height:0px;
+  transition:.5s;
+}
+.app_head{
+  padding:10px;
+  margin: 20px;
+  color:#e6e6e6
+}
+.app:hover > .app_top {
+  background-color:white;
+}
+.app:hover > .app_desc {
+  height:100px;
+  background-color:white;
+  color:grey;
+}
+.app:hover > .app_author {
+  background-color:white;
+}
+.app:hover {
+  border: 2px solid black;
+  background-image: url('pics/ms_appCover.JPG');
+  background-size: cover;
+  background-position: center;
+  transition: .5s;
+}
 
 
 
@@ -283,7 +313,7 @@ select {
 }
 .after{
 z-index: 1;
-background-color: blue;
+background-color:blue;
 }
 .before {
   background-color:red;
