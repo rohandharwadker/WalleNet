@@ -299,7 +299,9 @@ select {
   background-position: center;
   transition: .5s;
 }
-
+.cl_text {
+  color:grey;
+}
 
 
 
