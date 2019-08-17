@@ -9,21 +9,27 @@ else if (document.title == "Website Builder - WN") {
     pIndex2 = 2;
 }
 else if (document.title == "Settings - WN") {
-    pIndex = 0
-    pIndex2 = 0
+    pIndex = 0;
+    pIndex2 = 0;
+}
+else if (document.title == "Tutorials - WN") {
+    pIndex = 0;
+    pIndex2 = 0;
 }
 var bodytag = document.getElementById('bodytag');
 var nav_button_set = document.getElementById("nav_button_set");
 var nav_button_app = document.getElementById("nav_button_ap");
 var nav_button_wb = document.getElementById("nav_button_wb");
+var nav_button_tt = document.getElementById('nav_button_tt');
 var navbar = document.getElementById('navbar');
+var logo = document.getElementById('logo');
 var ptag = document.getElementsByTagName("P")[pIndex];
 var ptag2 = document.getElementsByTagName("P")[pIndex2];
 var nav_button_fb = document.getElementById("nav_button_fb");
 var nav_button_sw = document.getElementById("nav_button_sw");
 var main = document.getElementById('main');
 var main2 = document.getElementById('main2');
-var logo = document.getElementById('logo');
+
 
 
 
@@ -37,6 +43,7 @@ function theme_load() {
         nav_button_set.style.backgroundColor = 'white';
         nav_button_app.style.backgroundColor = 'white';
         nav_button_wb.style.backgroundColor = 'white';
+        nav_button_tt.style.backgroundColor = 'white';
         logo.style.backgroundColor = 'white';
         ptag.style.color = 'black';
         ptag2.style.color = 'black';
@@ -51,6 +58,7 @@ function theme_load() {
         nav_button_set.style.backgroundColor = 'black';
         nav_button_app.style.backgroundColor = 'black';
         nav_button_wb.style.backgroundColor = 'black';
+        nav_button_tt.style.backgroundColor = 'black';
         logo.style.backgroundColor = 'black';
         ptag.style.color = 'grey';
         ptag2.style.color = 'grey';
@@ -72,6 +80,7 @@ function theme_dark() {
     nav_button_app.style.backgroundColor = 'black';
     nav_button_set.style.backgroundColor = 'black';
     nav_button_wb.style.backgroundColor = 'black';
+    nav_button_tt.style.backgroundColor = 'black';
     logo.style.backgroundColor = 'black';
     localStorage.theme = "dark";
     ptag.style.color = 'grey';
@@ -91,6 +100,7 @@ function theme_light() {
     nav_button_set.style.backgroundColor = 'white';
     nav_button_app.style.backgroundColor = 'white';
     nav_button_wb.style.backgroundColor = 'white';
+    nav_button_tt.style.backgroundColor = 'white';
     logo.style.backgroundColor = 'white';
     localStorage.theme = "light";
     ptag.style.color = 'black';

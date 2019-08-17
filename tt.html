@@ -4,26 +4,30 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Changelog - WN</title>
+  <title>Tutorials - WN</title>
   <link rel="icon" href="pics/WN_logo2_grey.png">
   <meta name="description" content="The official site for WalleNet">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script> -->
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
 
 </head>
 
 <body id="bodytag" class="animated fadeInUp" onload="open_modal(),theme_load()">
+    <!-- <button class="theme_button" onclick="theme_light()">Enable Light Mode</button>
+    <button class="theme_button" onclick="theme_dark()">Enable Dark Mode! :)</button>
+    <button class="theme_button" onclick="check_theme()">Check Theme</button>
+    <button class="theme_button" onclick="erase_theme()">Erase Theme</button> -->
     <a id="index_top"></a>
     <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
     <div class="links" id="navbar">
-        <div class="dropdown">
-            <a href="index.html"><button class="dropbtn logo"></button></a>
+        <div id="wn-logo" class="dropdown">
+            <a href="index.html"><button id="logo" class="dropbtn logo"></button></a>
         </div>
         <div class="dropdown">
             <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
@@ -32,7 +36,7 @@
             <button class="dropbtn" id="nav_button_ap"><a class="drop_head" href="apps.html">Apps</a></button>
         </div>
         <div class="dropdown">
-            <button class="dropbtn" id="nav_button_tt"><a class="drop_head" href="tt.html">Learn Code</a></button>
+            <button class="dropbtn" id="nav_button_tt"><a class="drop_active3 drop_head" href="tt.html">Learn Code</a></button>
         </div>
         <div class="dropdown">
             <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="settings.html">Settings</a></button>
@@ -49,16 +53,20 @@
             </div> -->
         </div>
     </div>
-    <div class="animated fadeInLeft" style="padding:25px;margin:25px;border:3px solid grey;">
-        <h5 class="cl_date">07.19.19</h5>
-        <p class="cl_text" style="padding:10px;">Log start</p>
-        <h5 class="cl_date">07.20.19</h5>
-        <p class="cl_text" style="padding:10px;">Added dark mode</p>
-        <h5 class="cl_date">07.20.19</h5>
-        <p class="cl_text" style="padding:10px;">Added settings</p>
-        <h5 class="cl_date">08.15.19</h5>
-        <p class="cl_text" style="padding:10px;">Added Apps</p>
+
+    <h3 class="app_head animated fadeInRight"><span style="font-size: 100px;color:#00550e;"><span style="color:green;">WN </span>Tutorials </span></h3>
+    <div class="learn_section">
+        <h3>Hover-Responsive Textbox</h3>
+        <a target="none" href="box_test.html"><button style="float:left;" class="learn-button"><span>Example </span></button></a>
+        <a target="none" href="https://htmlcssjssolutions.blogspot.com/2019/08/solved-creating-box-that-edits-text-on.html"><button class="learn-button"><span>Learn </span></button></a>
     </div>
+    <div class="learn_section">
+        <h3>Link Box</h3>
+        <a target="none" href="divArrow_test.html"><button style="float:left;" class="learn-button"><span>Example </span></button></a>
+        <a target="none" href="https://htmlcssjssolutions.blogspot.com/2019/08/solved-div-box-with-link-arrow-htmlcss.html"><button class="learn-button"><span>Learn </span></button></a>
+    </div>
+    
+
     <script type="text/javascript" src="javascript.js"></script>
     <script type="text/javascript" src="theme.js"></script>
 </body>

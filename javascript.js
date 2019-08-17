@@ -16,11 +16,12 @@ function showSlides() {
 
 window.onscroll = function() {
     var nav = document.getElementById("navbar");
-    var nav_button_wb = document.getElementById("nav_button_wb")
-    var nav_button_fb = document.getElementById("nav_button_fb")
-    var nav_button_sw = document.getElementById("nav_button_sw")
-    var nav_button_set = document.getElementById("nav_button_set")
-    var nav_button_app = document.getElementById("nav_button_ap")
+    var nav_button_wb = document.getElementById("nav_button_wb");
+    var nav_button_fb = document.getElementById("nav_button_fb");
+    var nav_button_sw = document.getElementById("nav_button_sw");
+    var nav_button_set = document.getElementById("nav_button_set");
+    var nav_button_app = document.getElementById("nav_button_ap");
+    var nav_button_tt = document.getElementById("nav_button_tt");
     if ( window.pageYOffset > 100 ) {
         nav.classList.add("links1");
         nav_button_wb.classList.add("links1")
@@ -28,6 +29,8 @@ window.onscroll = function() {
         nav_button_sw.classList.add("links1")
         nav_button_set.classList.add("links1")
         nav_button_app.classList.add("links1")
+        nav_button_tt.classList.add("links1")
+
         // var nav_button_array = document.getElementsByClassName("dropbtn");
         // for(var i = 0; i < nav_button_array.length; i++)
         // {
@@ -40,6 +43,7 @@ window.onscroll = function() {
         nav_button_sw.classList.remove("links1")
         nav_button_set.classList.remove("links1")
         nav_button_app.classList.remove("links1")
+        nav_button_tt.classList.remove("links1")
         // for(var i = 0; i < nav_button_array.length; i++)
         // {
         //     nav_button_array[i].className -= "links1";
