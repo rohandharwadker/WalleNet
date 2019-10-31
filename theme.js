@@ -1,8 +1,8 @@
-var pIndex = 0;
-var pIndex2 = 0;
+var pIndex = -1;
+var pIndex2 = -1;
 if (document.title == "Home - WN") {
-    pIndex = 1;
-    pIndex2 = 3;
+    pIndex = 2;
+    pIndex2 = 4;
 }
 else if (document.title == "Website Builder - WN") {
     pIndex = 0;
@@ -17,10 +17,10 @@ else if (document.title == "Tutorials - WN") {
     pIndex2 = 0;
 }
 var bodytag = document.getElementById('bodytag');
+var navbar = document.getElementById('navbar');
 var nav_button_set = document.getElementById("nav_button_set");
 var nav_button_app = document.getElementById("nav_button_ap");
 var nav_button_wb = document.getElementById("nav_button_wb");
-var navbar = document.getElementById('navbar');
 var logo = document.getElementById('logo');
 var ptag = document.getElementsByTagName("P")[pIndex];
 var ptag2 = document.getElementsByTagName("P")[pIndex2];
@@ -38,6 +38,7 @@ var main2 = document.getElementById('main2');
 function theme_load() {
     
     if (localStorage.theme == "light") {
+        navbar.style.backgroundColor = 'white';
         bodytag.style.backgroundColor = 'white';
         nav_button_set.style.backgroundColor = 'white';
         nav_button_app.style.backgroundColor = 'white';
@@ -45,13 +46,13 @@ function theme_load() {
         logo.style.backgroundColor = 'white';
         ptag.style.color = 'black';
         ptag2.style.color = 'black';
-        navbar.style.backgroundColor = 'white';
         main.style.backgroundColor = '#ebebeb';
         main2.style.backgroundColor = '#ebebeb';
         nav_button_fb.style.backgroundColor = 'white';
         nav_button_sw.style.backgroundColor = 'white';
     }
     else if (localStorage.theme == "dark") {
+        navbar.style.backgroundColor = 'black';
         bodytag.style.backgroundColor = 'black';
         nav_button_set.style.backgroundColor = 'black';
         nav_button_app.style.backgroundColor = 'black';
@@ -59,7 +60,6 @@ function theme_load() {
         logo.style.backgroundColor = 'black';
         ptag.style.color = 'grey';
         ptag2.style.color = 'grey';
-        navbar.style.backgroundColor = 'black';
         main.style.backgroundColor = '#303030';
         main2.style.backgroundColor = '#303030';
         nav_button_fb.style.backgroundColor = 'black';
@@ -73,6 +73,7 @@ function theme_load() {
 }
 
 function theme_dark() {
+    navbar.style.backgroundColor = 'black';
     bodytag.style.backgroundColor = 'black';
     nav_button_app.style.backgroundColor = 'black';
     nav_button_set.style.backgroundColor = 'black';
@@ -81,7 +82,6 @@ function theme_dark() {
     localStorage.theme = "dark";
     ptag.style.color = 'grey';
     ptag2.style.color = 'grey';
-    navbar.style.backgroundColor = 'black';
     nav_button_app.style.backgroundColor = 'black';
     nav_button_set.style.backgroundColor = 'black';
     main.style.backgroundColor = '#303030';
@@ -92,6 +92,7 @@ function theme_dark() {
     
 }
 function theme_light() {
+    navbar.style.backgroundColor = 'white';
     bodytag.style.backgroundColor = 'white';
     nav_button_set.style.backgroundColor = 'white';
     nav_button_app.style.backgroundColor = 'white';
@@ -100,7 +101,6 @@ function theme_light() {
     localStorage.theme = "light";
     ptag.style.color = 'black';
     ptag2.style.color = 'black';
-    navbar.style.backgroundColor = 'white';
     nav_button_set.style.backgroundColor = 'white';
     nav_button_app.style.backgroundColor = 'white';
     main.style.backgroundColor = '#ebebeb';

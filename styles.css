@@ -16,7 +16,7 @@ p {
 }
 .footer {
   padding:20px;
-  margin-top:100px;
+  margin-top:0px;
 }
 
 .comments {
@@ -39,6 +39,7 @@ p {
     width:100%;
     z-index: 1;
     transition: .25s;
+    background-color:black;
 }
 .theme_button{
   font-family: 'Open Sans', sans-serif;
@@ -65,7 +66,6 @@ p {
   color:#4d4d4d;
 } 
 .drop_head:hover {
-  color:#1b1616;
   text-shadow: -2px 2px #0000003a;
   transition:.1s;
 }   
@@ -88,7 +88,7 @@ p {
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    background-color:grey;
+    background-color:rgb(214, 214, 214);
     display: none;
     position: absolute;
     min-width: 160px;
@@ -129,7 +129,7 @@ p {
   margin-right:0px;
   margin-left:0px;
   padding:120px;
-  background-image: url('pics/amb_icon1.png');
+  background-image: url('pics/avion_logo.png');
   background-repeat: no-repeat;
   background-position: 90%;
   background-size: 300px;
@@ -148,6 +148,14 @@ p {
   margin-right:0px;
   margin-left:0px;
   padding:60px;
+}
+.pro-head{
+  margin-top:10px;
+  margin-right:0px;
+  margin-left:0px;
+  padding:1px;
+  padding-left:0px;
+  font-size:40px;
 }
 .wb_head {
   text-align: right;
@@ -311,6 +319,19 @@ select {
   margin: 20px;
   color:#e6e6e6
 }
+.pro-logo {
+  color:black;
+  padding:10px;
+  padding-top:16px;
+  padding-bottom:8px;
+  background-color:purple;
+  font-family: 'Turret Road', cursive;
+}
+.pro-sublogo {
+  background-color: rgb(70,0,70);
+  padding:11px;
+  color:purple;
+}
 .app:hover > .app_top {
   background-color:white;
 }
@@ -390,13 +411,45 @@ select {
   border: 2px rgb(187, 187, 187) solid;
   border-radius: 4px;
   padding: 10px;
+  margin:10px ;
+  transition:.5s;
 }
 .add_button a {
   color:gray;
   font-weight: bold;
+  text-decoration: none;
 }
 .add_button:hover {
-  content:" >"
+  background-color:rgb(70, 70, 70);
+  border-color:rgb(70, 70, 70);
+  font-size:15px;
+  transition:.5s;
+}
+.add_button:hover a {
+  color:white;
+}
+.add_button_pro {
+  background: none;
+  border: 2px rgb(187, 187, 187) solid;
+  border-radius: 4px;
+  padding: 10px;
+  transition:.5s;
+  margin-left:40px;
+}
+.add_button_pro a {
+  color:gray;
+  font-weight: bold;
+  text-decoration: none;
+  color:rgb(70, 0, 70)
+}
+.add_button_pro:hover {
+  background-color:rgb(70, 0, 70);
+  border-color:rgb(70, 0, 70);
+  font-size:15px;
+  transition:.5s;
+}
+.add_button_pro:hover a {
+  color:white;
 }
 
 
@@ -598,6 +651,97 @@ slideshow */
   text-decoration: none;
   cursor: pointer;
 }
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  background-color:black;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color:white;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+}
+
+.app-container{
+  text-align:center;
+  display:inline-block;
+  background-color:black;
+  border:2px solid darkgray;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding:30px;
+  width:25%;
+}
+.app-cover{
+  width:80px;
+  height:80px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+.app-button{
+  border:none;
+  border-radius:10px;
+  padding:10px;
+  color:white;
+  font-weight: bold;
+  background-color:#F26522;
+}
+.apps{
+  color:white;
+  background-color:black;
+  margin:0px;
+  padding:10px;
+  margin-bottom:0px;
+  text-align:center;
+}
+.app-desc{
+  color:dimgray;
+  margin:100px;
+  padding:100px;
+  text-align:right;
+  border: dimgray solid 3px;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #003489;
+
+}
+
+
+
+
 
 .drop_active {
   border-bottom: 4px solid blue;
@@ -606,7 +750,7 @@ slideshow */
   border-bottom: 4px solid purple;
 }
 .drop_active2 {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #F26522;
 }
 
 .drop_active3 {
