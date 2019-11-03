@@ -125,7 +125,7 @@ p {
   /* background-color: rgb(247, 247, 247); */
   background-color: #ebebeb;
   color:dimgray;
-  margin:100px;
+  margin:10%;
   margin-right:0px;
   margin-left:0px;
   padding:120px;
@@ -738,9 +738,13 @@ slideshow */
   background: #003489;
 
 }
-
-
-
+.avion_add {
+  background-image: url('pics/ff_graphic.png');
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: 160%;
+  background-attachment: fixed;
+}
 
 
 .drop_active {
