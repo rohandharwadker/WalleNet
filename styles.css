@@ -137,7 +137,7 @@ p {
 .secondary {
   color: gray;
   text-align:center;
-  margin:25;
+  margin:25px;
   padding:25px;
 }
 .app_ad {
@@ -411,7 +411,6 @@ select {
   border: 2px rgb(187, 187, 187) solid;
   border-radius: 4px;
   padding: 10px;
-  margin:10px ;
   transition:.5s;
 }
 .add_button a {
@@ -676,12 +675,14 @@ slideshow */
 
 .app-container{
   text-align:center;
-  display:inline-block;
   background-color:black;
   border:2px solid darkgray;
-  margin-top:30px;
-  margin-bottom:30px;
-  padding:30px;
+  color:white;
+  padding:60px;
+  margin-top:0px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:100px;
   width:25%;
 }
 .app-cover{
@@ -706,15 +707,69 @@ slideshow */
   margin-bottom:0px;
   text-align:center;
 }
-.app-desc{
-  color:dimgray;
+.game_add {
+  /*set bg size, pos, and url in style tag*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0px;
+}
+.game-container {
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:center;
+}
+.game-sub-container {
+  margin-left:auto;
+  margin-right:auto;
+}
+.game-desc{
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid white;
+  color:white;
   margin:100px;
   padding:100px;
-  text-align:right;
-  border: dimgray solid 3px;
+  margin-bottom:0px;
 }
-
-
+.game-info{
+  background-color: rgba(0,0,0,0.9);
+  border: 2px solid white;
+  color:white;
+  padding:30px;
+  margin:50px;
+  margin-top:0px;
+  text-align:center;
+  display:inline-block;
+}
+.cf-head {
+  padding:150px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+.cf-desc{
+  margin:0px;
+  background-image: url("pics/fitbit-icon.jpg");
+  background-repeat: no-repeat;
+  background-size:300px;
+  background-position-x: 80%;
+  background-position-y: 50%;
+  background-color:black;
+}
+.cf-subhead{
+  background-color:darkgreen;
+  width:37%;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius:20px;
+}
+.cf-subhead2{
+  background-color:darkgreen;
+  width:50%;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius:10px;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -758,7 +813,7 @@ slideshow */
 }
 
 .drop_active3 {
-  border-bottom: 4px solid green;
+  border-bottom: 4px solid greenyellow;
 }
 
 .drop_active4 {
