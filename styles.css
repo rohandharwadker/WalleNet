@@ -770,7 +770,38 @@ slideshow */
   padding-right:10px;
   border-radius:10px;
 }
-
+.cf-container {
+  height:40%;
+  width:20%;
+  margin:2%;
+  padding:2%;
+  background-color:lightgray;
+  text-align:center;
+  transition:.5s;
+  display:inline-block;
+}
+.cf-container:hover {
+  transform: scale(1.1);
+  background-color:darkgreen;
+  color:white;
+  transition:.5s;
+}
+.cf-pic {
+  width:70%;
+  height:70%;
+}
+.cfs-cont{
+  text-align: center;
+}
+.cf-hr {
+  width:80%;
+  height:5px;
+  background-color:gray;
+  border:none;
+}
+.cf-section-head{
+  color:gray;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -800,6 +831,7 @@ slideshow */
   background-size: 160%;
   background-attachment: fixed;
 }
+
 
 
 .drop_active {
