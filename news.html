@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The WalleNet Times</title>
+  <link rel="icon" href="pics/WN_logo2_grey.png">
+  <meta name="description" content="The official site for news from WalleNet">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  
+</head>
+
+<body>
+    <div class="header">
+        <img src="pics/news-logo.png"/>
+    </div>
+
+    <div class="top-articles-container">
+
+      <div class="post">
+        <h2>WalleNet Enters News Business</h2>
+        <h6>Jan 26, 2020</h6>
+        <hr/>
+        <h5>In a somewhat unexpected move, Rohan Dharwadker, CEO of WalleNet, has announced the first ever WalleNet Times.</h5>
+      </div>
+
+    </div>
+</body>
+
+</html>
+<style>
+  body {
+      margin:0;
+  }
+  .header {
+      text-align:center;
+      padding:2%;
+      margin-top:1%;
+      background-color: black;
+      color:white;
+  }
+
+  /* Main Page */
+
+  .top-articles-container {
+      text-align:center;
+  }
+  .post {
+      height:40%;
+      width:20%;
+      margin:2%;
+      padding:2%;
+      background-color:white;
+      border: 3px solid rgb(230, 230, 230);
+      border-radius: 10px;
+      text-align:center;
+      display:inline-block;
+      transition:.2s;
+  }
+  .post > hr {
+      padding:0;
+      margin:auto;
+      width:30%;
+  }
+  .post > h5,h6 {
+      color:gray;
+  }
+  .post:hover{
+      color:white;
+      background-color: gray;
+      border: gray solid 3px;
+      transform: scale(1.1);
+      transition:.2s;
+  }
+  .post:hover > h5 {
+      color:white;
+  }
+  .post:hover > h6 {
+      color:white;
+  }
+</style>
