@@ -168,6 +168,11 @@ p {
   background-position: 0%;
   background-size: 300px;
 }
+@media only screen and (max-width: 479px) {
+  .wb_head {
+    background:none;
+   }
+}
 .wb_howItWorks{
     text-align:center;
     color: dimgray;
