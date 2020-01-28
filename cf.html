@@ -21,30 +21,18 @@
 <body id="bodytag">
     <a id="index_top"></a>
     <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
-    <div class="links" style="background-color:white;">
-        <div id="wn-logo" class="dropdown">
-            <a href="index.html"><button id="logo" class="dropbtn logo"></button></a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_wb"><a class="drop_head" href="wb.html">Website Builder</a></button>
-            <div class="dropdown-content">
-                <a class="dropdown-item" href="wb.html">Website Builder</a>
-                <a class="dropdown-item" href="wbp.html">Website Builder Pro</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_ap"><a class="drop_head" href="av.html">Avion</a></button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_ap"><a class="drop_head drop_active3" href="cf.html">ClockFaces</a></button>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn" id="nav_button_ap"><a class="drop_head" href="news.html" target="none">WN Times</a></button>
-        </div>
-        <div class="dropdown1">
-            <button class="dropbtn" id="nav_button_set"><a class="drop_head" href="about.html"><i class="fas fa-user"></i></a></button>
-        </div>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        <a href="wb.html">Website Builder</a>
+        <a href="av.html">Avion</a>
+        <a href="cf.html" id="cf-active">Clock Faces</a>
+        <a href="news.html" target="none">News</a>
+        <a href="about.html" class="nav-right"><i class="fas fa-info-circle"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="collapse()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+
     <div class="cf-desc">
         <div class="cf-head" style="color:white;">
             <h1 style="color:greenyellow;" class="animated fadeInUp">Time to <span style="color:white">face </span> the day.</h1>

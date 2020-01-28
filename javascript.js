@@ -1,2 +1,8 @@
-width = window.innerWidth;
-height = window.innerHeight;
+function collapse() {
+var x = document.getElementById("myNavbar");
+if (x.className === "navbar") {
+    x.className += " responsive";
+} else {
+    x.className = "navbar";
+}
+}
