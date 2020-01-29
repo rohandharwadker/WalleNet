@@ -172,6 +172,8 @@ p {
 @media only screen and (max-width: 1070px) {
   .wb_head {
     background-image:none;
+    margin:auto;
+    margin-top:10px;
    }
 }
 .wb_howItWorks{
@@ -324,6 +326,12 @@ select {
   padding:10px;
   margin: 20px;
   color:#e6e6e6
+}
+@media screen and (max-width: 1070px) {
+  #wb-head {
+    margin:0;
+    padding:0;
+  }
 }
 .pro-logo {
   color:black;
