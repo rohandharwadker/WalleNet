@@ -44,14 +44,14 @@ p {
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 1070px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 1070px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
