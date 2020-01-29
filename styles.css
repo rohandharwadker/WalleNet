@@ -68,7 +68,22 @@ p {
   background-color:rgb(238, 237, 237);
   transition:.2s;
 }
-
+#avion-mobile-body {
+  display:none;
+}
+@media screen and (max-width: 1070px){
+  #avion-mobile-body {
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    background-color:rgb(240, 240, 240);
+    border-radius:50px;
+    display:inline-block;
+  }
+  #avion-body {
+    display:none;
+  }
+}
 
 
 .navbar a#home-active {
@@ -781,13 +796,15 @@ slideshow */
   padding-right:10px;
   border-radius:20px;
 }
-.cf-subhead2{
-  background-color:darkgreen;
-  width:50%;
-  padding:5px;
-  padding-left:10px;
-  padding-right:10px;
-  border-radius:10px;
+@media screen and (max-width: 1070px) {
+  .cf-desc {
+    background-image:none;
+  }
+  .cf-head {
+    padding:20px;
+    padding-top:150px;
+    padding-bottom:150px;
+  }
 }
 .cf-container {
   height:40%;
@@ -856,9 +873,11 @@ slideshow */
 .drop_active {
   border-bottom: 4px solid blue;
 }
+
 .drop_active1 {
   border-bottom: 4px solid purple;
 }
+
 .drop_active2 {
   border-bottom: 4px solid #F26522;
 }
