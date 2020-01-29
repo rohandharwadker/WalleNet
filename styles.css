@@ -20,8 +20,8 @@ p {
 }
 
 .navbar{
+  overflow: hidden;
   background-color:white;
-  overflow:hidden;
   position:sticky;
   top:0;
   z-index:10;
@@ -36,6 +36,7 @@ p {
   text-decoration: none;
   font-size: 17px;
   transition:.2s;
+  z-index: 20;
 }
 .navbar a.nav-right{
   float: right;
@@ -43,14 +44,14 @@ p {
 .navbar .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 745px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 745px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
