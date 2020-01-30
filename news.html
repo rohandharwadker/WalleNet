@@ -6,7 +6,7 @@
     <meta name="description" content="The official site for WalleNet">
     <meta name="author" content="WalleNet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WN Times - WN</title>
+    <title>News - WN</title>
     
     <link rel="icon" href="pics/WN_logo2_grey.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -20,9 +20,12 @@
 
 <body>
     <div class="header">
-        <img src="pics/news-logo.png"/>
+        <h1>WalleNet News</h1>
+        <h2>The Latest News Updates</h2>
     </div>
-
+    <div class="top-articles-head">
+        <h1>Top Headlines</h1>
+    </div>
     <div class="top-articles-container">
         <div class="post">
             <h2>WN is (Sort of) Killing Off Avion</h2>
@@ -63,8 +66,14 @@
   }
 
   /* Main Page */
-
+  .top-articles-head {
+      margin-top:30px;
+      padding:10px;
+      background-color:red;
+      color:white;
+  }
   .top-articles-container {
+      background-color:black;
       text-align:center;
   }
   .post {
@@ -99,5 +108,14 @@
   }
   .post:hover > h6 {
       color:white;
+  }
+  @media screen and (max-width:1070px){
+      .post {
+          width:80%;
+          height:50%
+      }
+      .top-articles-head{
+          text-align:center;
+      }
   }
 </style>
