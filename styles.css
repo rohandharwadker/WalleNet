@@ -816,6 +816,11 @@ slideshow */
   transition:.5s;
   display:inline-block;
 }
+@media screen and (max-width:1070px){
+  .cf-container{
+    width:40%;
+  }
+}
 .cf-container:hover {
   transform: scale(1.1);
   background-color:darkgreen;
