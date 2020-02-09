@@ -230,53 +230,13 @@ p {
 .gold {
   color:gold;
 }
-.song-enter {
-  background-color: #f0f0f0;
-  border-radius: 100px;
-  text-align:center;
-  margin:120px;
-  padding: 50px;
-}
-.text-field {
-  border-radius: 25px;
-  width:300px;
-}
 input {
   padding:10px;
   border-top:#004bc4 solid 2px;
   border-left: #004bc4 solid 2px;
   border-right:#003489 solid 2px;
   border-bottom:#003489 solid 2px;
-}
-select {
-  padding:10px;
-  border-radius: 25px;
-  border-top:#004bc4 solid 2px;
-  border-left: #004bc4 solid 2px;
-  border-right:#003489 solid 2px;
-  border-bottom:#003489 solid 2px;
-}
-.submit-button {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  width: 100px;
-  color: white;
-  padding:10px;
-  border-radius: 20px;
-  background-color: #003489;
-  border:none;
-  /* border-top:#004bc4 solid 2px;
-  border-left: #004bc4 solid 2px;
-  border-right:#003489 solid 2px;
-  border-bottom:#003489 solid 2px; */
-}
-.submit-container {
-  margin-top:50px;
-}
-.stored-songs {
-  text-align:center;
-  padding:50px;
-  background-color: #f0f0f0;
+  border-radius:15px;
 }
 .settings{
   margin:25px;
