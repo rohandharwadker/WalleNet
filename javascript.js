@@ -4,6 +4,7 @@ function collapse() {
 var x = document.getElementById("myNavbar");
 if (x.className === "navbar") {
     x.className += " responsive";
+    scrollTo(0,0)
 } else {
     x.className = "navbar";
 }
