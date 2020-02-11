@@ -8,16 +8,11 @@ if (x.className === "navbar") {
     x.className = "navbar";
 }
 }
-
-if (width < 1070) {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("myNavbar").style.top = "0";
-    } else {
-        document.getElementById("myNavbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-    }
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+if (currentScrollPos > 60) {
+    document.getElementById("myNavbar").style.boxShadow= "0 3px 3px rgba(0,0,0,0.5)";
+} else {
+    document.getElementById("myNavbar").style.boxShadow= "none"
+}
 }
