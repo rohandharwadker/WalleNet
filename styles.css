@@ -1,3 +1,6 @@
+.changer{
+  background: none;  
+}
 html {
   scroll-behavior: smooth;
 }
@@ -109,7 +112,6 @@ p {
   background-color: #003489;
   color:white;
 }
-
 
 
 
