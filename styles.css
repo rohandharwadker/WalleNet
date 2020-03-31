@@ -814,16 +814,26 @@ slideshow */
   background-attachment: fixed;
 }
 
-
 /* Tutorials page */
+.tutorial-head-bg-image{
+  background-image:url('pics/coding.png');
+  background-size:cover;
+  background-repeat:none;
+  background-attachment: fixed;
+  padding-top:22%;
+  padding-bottom:22%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
 .tutorial-head{
-  margin:auto;
-  margin-top:23%;
-  margin-bottom:23%;
-  width:20%;
-  text-align:center;
-  z-index: 2;
-
+  background-color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18%;
+  padding: 20px;
+  text-align: center;
 }
 .tutorial-head h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -847,8 +857,71 @@ slideshow */
   from, to { border-color: transparent }
   50% { border-color: #f80042; }
 }
+.tutorial-intro{
+  background-color:white;
+  padding:11%;
+}
+.tutorial-intro-content{
+  background-color:#f80042;
+  border-radius: 100px;
+  padding:11%;
+}
+.tutorial-intro-content h1{
+  color:white;
+}
+.tutorial-intro-content p{
+  color:white;
+}
 
-
+.videos-head{
+  color:gray;
+  padding:10px;
+  text-align:center;
+}
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  transition: .2s;
+}
+.chip:hover{
+  background-color: #FF0000;
+  color:white;
+  transition: .2s;
+}
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+iframe {
+  background-color:lightgray;
+  padding:10px;
+  margin:10px;
+  border-radius:10px;
+}
+.videos{
+  text-align:center;
+  transition: .2s;
+}
+.new-label{
+  display:none;
+  transition: .2s;
+}
+.chip:hover .new-label{
+  display:inline-block;
+  transition: .2s;
+}
+.chip:hover .yt-name{
+  display:none;
+  transition: .2s;
+}
 
 
 .drop_active {
