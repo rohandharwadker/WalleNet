@@ -429,7 +429,7 @@ input {
 .add_button:hover {
   background-color:rgb(70, 70, 70);
   border-color:rgb(70, 70, 70);
-  font-size:15px;
+  transform: scale(1.1);
   transition:.5s;
 }
 .add_button:hover a {
@@ -890,18 +890,20 @@ slideshow */
 }
 .chip {
   display: inline-block;
+  width:13%;
   padding: 0 25px;
   height: 50px;
   font-size: 16px;
   line-height: 50px;
   border-radius: 25px;
   background-color: #f1f1f1;
-  transition: .2s;
+  transition: .5s;
 }
 .chip:hover{
   background-color: #FF0000;
   color:white;
-  transition: .2s;
+  transform: rotateY(360deg);
+  transition: .5s;
 }
 .chip img {
   float: left;
@@ -918,19 +920,19 @@ iframe {
 }
 .videos{
   text-align:center;
-  transition: .2s;
+  transition: .5s;
 }
 .new-label{
   display:none;
-  transition: .2s;
+  transition: .5s;
 }
 .chip:hover .new-label{
   display:inline-block;
-  transition: .2s;
+  transition: .5s;
 }
 .chip:hover .yt-name{
   display:none;
-  transition: .2s;
+  transition: .5s;
 }
 
 
