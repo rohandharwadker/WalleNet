@@ -815,6 +815,16 @@ slideshow */
 }
 
 /* Tutorials page */
+.tutorial-head-cont{
+  position: sticky;
+  top:0;
+}
+.tutorial-else{
+  background-color:white;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
 .tutorial-head-bg-image{
   background-image:url('pics/coding.png');
   background-size:cover;
