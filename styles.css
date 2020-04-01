@@ -934,7 +934,17 @@ iframe {
   display:none;
   transition: .5s;
 }
-
+@media screen and (max-width:1070px){
+  .tutorial-head-cont{
+    display:none;
+  }
+  .chip{
+    width:80%;
+  }
+  iframe{
+    width:95%;
+  }
+}
 
 .drop_active {
   border-bottom: 4px solid blue;
