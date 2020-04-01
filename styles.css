@@ -108,6 +108,10 @@ p {
   background-color: darkgreen;
   color:white;
 }
+.navbar a#dev-active {
+  background-color: #f80042;
+  color:white;
+}
 .navbar a#about-active {
   background-color: #003489;
   color:white;
@@ -944,24 +948,4 @@ iframe {
   iframe{
     width:95%;
   }
-}
-
-.drop_active {
-  border-bottom: 4px solid blue;
-}
-
-.drop_active1 {
-  border-bottom: 4px solid purple;
-}
-
-.drop_active2 {
-  border-bottom: 4px solid #F26522;
-}
-
-.drop_active3 {
-  border-bottom: 4px solid greenyellow;
-}
-
-.drop_active4 {
-  border-bottom: 4px solid #003489;
 }
