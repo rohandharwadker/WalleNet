@@ -963,7 +963,17 @@ iframe {
 .video-button:hover i {
   display:none;
 }
-
+@media screen and (max-width:1070px){
+  .video{
+    width:94%;
+  }
+  .video-button i {
+    display:none;
+  }
+  .video-button span {
+    display:block;
+  }
+}
 
 
 
