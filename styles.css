@@ -888,7 +888,6 @@ slideshow */
 .tutorial-intro-content p{
   color:white;
 }
-
 .videos-head{
   color:gray;
   padding:10px;
@@ -921,13 +920,56 @@ slideshow */
 iframe {
   background-color:lightgray;
   padding:10px;
-  margin:10px;
-  border-radius:10px;
+  display:block;
+  margin:auto;
 }
 .videos{
   text-align:center;
   transition: .5s;
+  display:inline-block;
+  width:100%;
 }
+.video{
+  height:15%;
+  width:30%;
+  padding:10px;
+  margin:10px;
+  background-color:lightgray;
+  display:inline-block;
+}
+.video-button-cont{
+  display:inline-block;
+}
+.video-button{
+  padding:10px;
+  background-color:rgb(0, 110, 255);
+  border:none;
+  border-radius:25px;
+}
+.video-button i {
+  color:white;
+}
+.video-button span {
+  display:none;
+  color:white;
+}
+.video-button a {
+  text-decoration: none;
+}
+.video-button:hover span {
+  display:block;
+  padding:5px;
+}
+.video-button:hover i {
+  display:none;
+}
+
+
+
+
+
+
+
 .new-label{
   display:none;
   transition: .5s;
