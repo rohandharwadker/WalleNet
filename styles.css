@@ -929,12 +929,37 @@ iframe {
   display:inline-block;
   width:100%;
 }
+#video-filter-button-container{
+  text-align: center;
+  margin:2%;
+}
+.video-filter-button{
+  border:none;
+  background-color:lightgray;
+  padding:15px;
+  margin:5px;
+  font-size: large;
+  color:black;
+  border-radius: 10px;
+  transition:.2s;
+}
+.video-filter-button:hover:not(.vfb-active){
+  background-color:rgb(185, 184, 184);
+  transition:.2s;
+}
+.vfb-active{
+  background-color:#f80042;
+  color:white;
+}
 .video{
   height:15%;
   width:30%;
   padding:10px;
   margin:10px;
   background-color:lightgray;
+  display:none;
+}
+.video-show {
   display:inline-block;
 }
 .video-button-cont{
