@@ -238,7 +238,11 @@ p {
   padding:15px;
   font-size:large;
 }
-
+@media screen and (max-width:1080px){
+  .wb-head {
+    width:100%;
+  }
+}
 
 
 .wb-customize{
@@ -264,7 +268,18 @@ p {
   width:50%;
   padding:5%;
 }
-
+@media screen and (max-width:1080px){
+  .wb-customize{
+    background-image:none;
+    text-align:center;
+  }
+  .wb-customize p{
+    text-align:center;
+  }
+  .wb-customize-innertext{
+    width:100%;
+  }
+}
 
 
 .wb-webdesabove{
@@ -278,6 +293,11 @@ p {
 }
 .wb-webdesabove img{
   width:50%;
+}
+@media screen and (max-width:1080px){
+  .wb-webdesabove img {
+    width:100%;
+  }
 }
 
 
@@ -310,7 +330,19 @@ p {
 .wb-mobile img {
   width:15%;
 }
-
+@media screen and (max-width:1080px){
+  .wb-mobile{
+    background-image:none;
+    text-align:center;
+  }
+  .wb-mobile p{
+    text-align:center;
+  }
+  .wb-mobile-innertext{
+    width:100%;
+    margin:0;
+  }
+}
 
 
 .wb-get{
@@ -331,7 +363,12 @@ p {
 .wb-get-right{
   vertical-align: middle;
 }
-
+@media screen and (max-width:1080px){
+  .wb-get-left,.wb-get-right {
+    display:block;
+    width:100%;
+ }
+}
 
 
 .logo {
