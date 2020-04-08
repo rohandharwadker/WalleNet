@@ -2,7 +2,7 @@
   background: none;  
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 body{
     margin:0px;
@@ -20,10 +20,50 @@ p {
 .footer {
   padding:20px;
   margin-top:0px;
+  text-align:center;
 }
-.footer-content p{
+.footer-top {
+  text-align:center;
+}
+.footer-top p{
   color:white;
 }
+.footer .add_button a{
+  color:white;
+}
+.footer-lower{
+  padding:2px;
+  display:inline-block;
+  width:30%;
+  vertical-align: middle;
+}
+.footer-lower p {
+  color:white;
+}
+.footer-lower p a {
+  color:white;
+}
+.footer-left{
+  text-align:left;
+  font-weight:bolder;
+  font-size: large;
+}
+.footer-right{
+  text-align:right;
+}
+@media screen and (max-width:1080px){
+  .footer-lower{
+    display:block;
+    margin:auto;
+  }
+  .footer-left{
+    display:none;
+  }
+  .footer-right{
+    text-align:center
+  }
+}
+
 .navbar{
   overflow: hidden;
   background-color:white;
@@ -176,42 +216,123 @@ p {
   margin-left:0px;
   padding:60px;
 }
-.pro-head{
-  margin-top:10px;
-  margin-right:0px;
-  margin-left:0px;
-  padding:1px;
-  padding-left:0px;
-  font-size:40px;
+
+
+
+
+
+
+.wb-head{
+  text-align:center;
+  width:25%;
+  margin:auto;
+  margin-top:7%;
+  margin-bottom:7%;
+  font-size: x-large;
 }
-.wb_head {
-  text-align: right;
-  background-color: #ebebeb;
-  color: dimgray;
-  margin: 50px;
-  padding: 50px;
-  background-image: url('pics/wblogo_purple.png');
+.getwebsitebutton {
+  border:none;
+  background-color: rgb(182, 0, 182);
+  border-radius: 25px;
+  color:white;
+  padding:15px;
+  font-size:large;
+}
+
+
+
+.wb-customize{
+  width:100%;
+  padding-top:10%;
+  padding-bottom:10%;
+  background-color:rgb(70, 0, 70);
+  margin:0;
+  background-image: url('pics/codingblur.png');
+  background-size: 77%;
+  background-position-x:218%;
+  background-position-y: center;
   background-repeat: no-repeat;
-  background-position: 0%;
-  background-size: 300px;
 }
-@media only screen and (max-width: 1070px) {
-  .wb_head {
-    background-image:none;
-    margin:auto;
-    margin-top:10px;
-   }
+.wb-customize h1,p{
+  color:white;
 }
-.wb_howItWorks{
-    text-align:center;
-    color: dimgray;
-    margin: 50px;
-    padding: 50px;
+.wb-customize p {
+  text-align:justify;
+  margin-bottom:30px;
 }
-.wb_pricing{
-    background-color: #ebebeb;
-    color: dimgray;
-    padding: 50px;}
+.wb-customize-innertext{
+  width:50%;
+  padding:5%;
+}
+
+
+
+.wb-webdesabove{
+  text-align:center;
+  margin:10px;
+  padding:10px;
+}
+.wb-webdesabove p {
+  color:rgb(70, 0, 70);
+  font-weight:bolder;
+}
+.wb-webdesabove img{
+  width:50%;
+}
+
+
+
+.wb-mobile{
+  text-align:right;
+  width:100%;
+  padding-top:10%;
+  padding-bottom:10%;
+  background-color:rgb(70, 0, 70);
+  margin:0;
+  background-image: url('pics/mobileresponsive2.png'),url('pics/mobileresponsive1.png');
+  background-size: 15%,77%;
+  background-position-x:20%,-120%;
+  background-position-y: 55%,center;
+  background-repeat: no-repeat;
+}
+.wb-mobile h1,p{
+  color:white;
+}
+.wb-mobile p {
+  text-align:right;
+  margin-bottom:30px;
+}
+.wb-mobile-innertext{
+  width:50%;
+  padding:5%;
+  margin-left:50%;
+}
+.wb-mobile img {
+  width:15%;
+}
+
+
+
+.wb-get{
+  background-color:rgb(90, 90, 90);
+  margin:0;
+  padding:10%;
+  color:white;
+  text-align:center;
+}
+.wb-get-left,.wb-get-right {
+   display:inline-block;
+   width:30%;
+}
+.wb-get-left{
+  vertical-align: middle;
+  font-size: larger;
+}
+.wb-get-right{
+  vertical-align: middle;
+}
+
+
 
 .logo {
     background-position: center;
@@ -309,10 +430,10 @@ input {
   margin: 20px;
   color:#e6e6e6
 }
-@media screen and (max-width: 1070px) {
-  #wb-head {
-    margin:0;
-    padding:0;
+@media screen and (max-width:1080px){
+  .app_head{
+    margin:auto;
+    text-align:center;
   }
 }
 .pro-logo {
@@ -447,7 +568,6 @@ input {
   border-radius: 4px;
   padding: 10px;
   transition:.5s;
-  margin-left:40px;
 }
 .add_button_pro a {
   color:gray;
@@ -765,7 +885,7 @@ slideshow */
 }
 @media screen and (max-width:1070px){
   .cf-container{
-    width:40%;
+    width:90%;
   }
 }
 .cf-container:hover {
