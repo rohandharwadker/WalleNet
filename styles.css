@@ -371,6 +371,25 @@ p {
 }
 
 
+.wb-pricing{
+  text-align:center;
+}
+.wb-pricing-cont{
+  background-color: rgb(235, 235, 235);
+  display: inline-block;
+  width:30%;
+  padding:50px;
+  margin:50px;
+  line-height: 2em;
+}
+.wb-pricing-cont p {
+  color:black;
+}
+
+
+
+
+
 .logo {
     background-position: center;
     background-image:url('pics/WN_logo2_grey.png');
