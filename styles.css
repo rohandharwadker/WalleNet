@@ -374,6 +374,14 @@ p {
 .wb-pricing{
   text-align:center;
 }
+.wb-pricing h1{
+  background-color:rgb(70,0,70);
+  color:white;
+  width:10%;
+  padding:1%;
+  margin:auto;
+  margin-top:20px;
+}
 .wb-pricing-cont{
   background-color: rgb(235, 235, 235);
   display: inline-block;
@@ -385,7 +393,27 @@ p {
 .wb-pricing-cont p {
   color:black;
 }
+#wbp-buy-cont{
+  border: 10px solid rgb(70,0,70);
+}
+#wbp-buy-cont h2{
+  color:white;
+  background-color:rgb(70,0,70);
+  width:60%;
+  margin:auto;
+  margin-top:5%;
+}
 
+@media screen and (max-width:1080px){
+  .wb-pricing h1 {
+    width:60%;
+  }
+  .wb-pricing-cont {
+    width:90%;
+    margin:5px;
+    line-height: normal;
+  }
+}
 
 
 
