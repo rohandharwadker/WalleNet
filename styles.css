@@ -1,3 +1,4 @@
+/* General */
 .changer{
   background: none;  
 }
@@ -7,9 +8,6 @@ html {
 body{
     margin:0px;
     font-family: "Google Sans","Roboto","Arial",sans-serif;
-}
-p {
-  color:black;
 }
 .head {
     padding-left:10px;
@@ -119,19 +117,6 @@ p {
 #avion-mobile-body {
   display:none;
 }
-@media screen and (max-width: 1070px){
-  #avion-mobile-body {
-    text-align:center;
-    padding:10px;
-    margin:10px;
-    background-color:rgb(240, 240, 240);
-    border-radius:50px;
-    display:inline-block;
-  }
-  #avion-body {
-    display:none;
-  }
-}
 
 
 .navbar a#home-active {
@@ -158,63 +143,148 @@ p {
   background-color: #003489;
   color:white;
 }
-
-
-
-
-
 .fas {
   font-size: 20px;
   color:#999999;
 }
-.main {
-    background-color: #ebebeb;
-    color:dimgray;
-    margin:100px;
-    padding:120px;
-    background-image: url('pics/wblogo_dimgrey.png');
-    background-repeat: no-repeat;
-    background-position: 90%;
-    background-size: 300px;
+.textdec_none {
+  text-decoration: none;
 }
-@media screen and (max-width: 1070px) {
-  .main {
-    background-image:none;
-    margin:10px;
-  }
-}
-.main2 {
-  /* background-color: rgb(247, 247, 247); */
-  background-color: #ebebeb;
-  color:dimgray;
-  margin:10%;
-  margin-right:0px;
-  margin-left:0px;
-  padding:120px;
-  background-image: url('pics/avion_logo.png');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home */
+.home-wbpromohead{
+  background-color:black;
+  color:white;
+  padding:10%;
+  background-image: url('pics/wblogo_purple.png');
+  background-position: 85%;
+  background-size:30%;
   background-repeat: no-repeat;
-  background-position: 90%;
-  background-size: 300px;
+} 
+.home-wbpromohead-content{
+  width:50%;
 }
-@media screen and (max-width: 1070px) {
-  .main2{
-    background-image:none;
-  }
-}
-.secondary {
-  color: gray;
+
+
+.home-wbget{
+  margin:0;
+  padding:10%;
+  color:black;
   text-align:center;
-  margin:25px;
-  padding:25px;
+  padding-bottom:0;
 }
-.app_ad {
-  background-color: #003489;
-  color: white;
+.home-wbget-left,.home-wbget-right {
+   display:inline-block;
+   width:30%;
+}
+.home-wbget-left{
+  vertical-align: middle;
+  font-size: larger;
+}
+.home-wbget-right{
+  vertical-align: middle;
+}
+.home-wbget-right a{
+  font-size:x-large;
+  color:black;
+  text-decoration: none;
+  border-bottom:3px solid black;
+}
+@media screen and (max-width:1080px){
+  .home-wbget-left,.home-wbget-right {
+    display:block;
+    width:100%;
+ }
+}
+.home-wbppromo-fade{
+  height:3000px;
+  background: linear-gradient(0deg, black 20%, rgb(125,125,125) 60%, white 75%);
+}
+.home-wbppromo-fade .content{
+  position:sticky;
+  top:50%;
+  color:white;
+  margin:10%;
+}
+.home-wbppromo-fade2{
+  padding:10%;
+  margin:0;
+  background-color:black;
+  background: linear-gradient(-10deg,rgb(70,0,70) 20%,rgb(35, 0, 35) 60%,black 75%);
+  height:3000px;
+}
+.home-wbppromo-fade2 .content {
+  position:sticky;
+  top:50%;
+  color:white;
+  margin:10%;
+}
+.home-wbppromo-fade3{
+  padding:10%;
+  margin:0;
+  background-color:black;
+  background: linear-gradient(0deg,black 20%,rgb(35, 0, 35) 60%,rgb(70,0,70) 75%);
+  height:3000px;
+}
+.home-wbppromo-fade3 .content {
+  position:sticky;
+  top:50%;
+  color:white;
+  margin:10%;
+}
+.home-wbppromo-fade4{
+  padding:10%;
+  margin:0;
+  background-color:black;
+  background: linear-gradient(10deg,white 20%,rgb(125, 125, 125) 60%,black 75%);
+  height:3000px;
   text-align:center;
-  margin:70px;
-  margin-right:0px;
-  margin-left:0px;
-  padding:60px;
+}
+.home-wbppromo-fade4 .content {
+  position:sticky;
+  top:50%;
+  margin:0;
+  color:black;
 }
 
 
@@ -222,6 +292,43 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Website Builder */
 .wb-head{
   text-align:center;
   width:25%;
@@ -257,7 +364,10 @@ p {
   background-position-y: center;
   background-repeat: no-repeat;
 }
-.wb-customize h1,p{
+.wb-customize h1{
+  color:white;
+}
+.wb-customize p{
   color:white;
 }
 .wb-customize p {
@@ -300,8 +410,6 @@ p {
   }
 }
 
-
-
 .wb-mobile{
   text-align:right;
   width:100%;
@@ -315,7 +423,10 @@ p {
   background-position-y: 55%,center;
   background-repeat: no-repeat;
 }
-.wb-mobile h1,p{
+.wb-mobile h1{
+  color:white;
+}
+.wb-mobile p{
   color:white;
 }
 .wb-mobile p {
@@ -450,21 +561,62 @@ p {
 
 
 
-.logo {
-    background-position: center;
-    background-image:url('pics/WN_logo2_grey.png');
-    background-size:cover;
-    width:70px;
-    height:27px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Avion */
+@media screen and (max-width: 1070px){
+  #avion-mobile-body {
+    text-align:center;
+    padding:10px;
+    margin:10px;
+    background-color:rgb(240, 240, 240);
+    border-radius:50px;
+    display:inline-block;
+  }
+  #avion-body {
+    display:none;
+  }
 }
 
-.bg_add {
-    padding:50px;
-    width : 1000px;
-}
-.textdec_none {
-  text-decoration: none;
+.secondary {
+  color: gray;
+  text-align:center;
+  margin:25px;
+  padding:25px;
 }
 
 .song_container {
