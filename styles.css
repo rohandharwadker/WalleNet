@@ -9,6 +9,10 @@ body{
     margin:0px;
     font-family: "Google Sans","Roboto","Arial",sans-serif;
 }
+button
+{
+    outline: 0 none;
+}
 .head {
     padding-left:10px;
     padding-top:0px;
@@ -61,7 +65,13 @@ body{
     text-align:center
   }
 }
-
+.standard-btn{
+  border:none;
+  border-radius: 25px;
+  color:white;
+  padding:15px;
+  font-size:large;
+}
 .navbar{
   overflow: hidden;
   background-color:white;
@@ -192,6 +202,9 @@ body{
 
 
 /* Home */
+.home-header{
+  margin-top: 1%;
+}
 .home-wbpromohead{
   background-color:black;
   color:white;
@@ -200,16 +213,46 @@ body{
   background-position: 85%;
   background-size:30%;
   background-repeat: no-repeat;
+  display:none;
+}
+.home-avpromohead{
+  background-color: #f1f1f1;
+  color:black;
+  padding:10%;
+  background-image: url('pics/avion_logo.png');
+  background-position: 85%;
+  background-size:20%;
+  background-repeat: no-repeat;
+  display:none;
 } 
-.home-wbpromohead-content{
+.home-promohead-content{
   width:50%;
 }
+
+.promo-show{
+  display: block;
+}
+#home-promohead-buttons-cont{
+  text-align: center;
+}
+.home-promohead-button{
+  text-align: center;
+  margin:1% 10px;
+  border-radius:30px;
+  padding:5px;
+  background-color:white;
+  border: solid 5px gray;
+}
+.promohead-btn-active{
+  background-color:gray;
+}
+
 @media screen and (max-width:1080px){
-  .home-wbpromohead{
+  .home-wbpromohead,.home-avpromohead{
     background-image:none;
     text-align: center;
   }
-  .home-wbpromohead-content{
+  .home-promohead-content{
     width:100%;
   }
 }

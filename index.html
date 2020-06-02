@@ -16,28 +16,13 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"fb0468347e947ba65de10d8ef","lid":"d76d03fb57","uniqueMethods":true}) })</script>
+  <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"fb0468347e947ba65de10d8ef","lid":"d76d03fb57","uniqueMethods":true}) })</script> -->
 
 </head>
 
 <body id="bodytag">
     <a id="index_top"></a>
     <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
-
-    
-
-    <div class="home-wbpromohead">
-        <div class="home-wbpromohead-content">
-            <h1>This is website building re-imagined.</h1>
-            <p>
-                WalleNet Website Builder is the next generation of website building.
-                With our vast experience in web-design, you won't write a single line of code.
-                You won't drag one content block. You don't even have to lift a finger. Tell us
-                what you want and we'll make it for you.
-            </p>
-            <a href="website-builder"><button class="getwebsitebutton">Try it Out</button></a>
-        </div>
-    </div>
 
     <div class="navbar" id="myNavbar">
         <a href="index" id="home-active">Home</a>
@@ -50,6 +35,43 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+
+
+
+    <div class="home-header">         
+
+        <div class="home-tab home-avpromohead filter-1">
+            <div class="home-promohead-content">
+                <h1>Introducing Asteroids.</h1>
+                <p>
+                    New from Avion Games, Asteroids is a fun PC game in which you must
+                    pilot a space ship and destroy as many asteroids as possible before
+                    they destroy you. With no internet connection required, you can
+                    destroy some asteroids wherever and whenever you want.
+                </p>
+                <a><button class="standard-btn" style="background-color: #ccc;">Coming Soon to Avion Games</button></a>
+            </div>
+        </div>
+
+        <div class="home-tab home-wbpromohead filter-2">
+            <div class="home-promohead-content">
+                <h1>This is website building re-imagined.</h1>
+                <p>
+                    WalleNet Website Builder is the next generation of website building.
+                    With our vast experience in web-design, you won't write a single line of code.
+                    You won't drag one content block. You don't even have to lift a finger. Tell us
+                    what you want and we'll make it for you.
+                </p>
+                <a href="website-builder"><button class="getwebsitebutton">Try it Out</button></a>
+            </div>
+        </div>
+        <div id="home-promohead-buttons-cont">
+            <button class="home-promohead-button promohead-btn-active" onclick="filterTab('filter-1')"></button>
+            <button class="home-promohead-button" onclick="filterTab('filter-2')"></button>
+        </div>
+    </div>
+
+
 
     <div class="home-wbget">
         <div class="home-wbget-left">

@@ -22,9 +22,31 @@ var currentScrollPos = window.pageYOffset;
 
 
 
+//Filtering Videos
+filterTab("filter-1");
+function filterTab(c) {
+    var x, i;
+    x = document.getElementsByClassName("home-tab");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        removeClass(x[i], "promo-show");
+        if (x[i].className.indexOf(c) > -1) addClass(x[i], "promo-show");
+    }
+}
+var btnCont = document.getElementById("home-promohead-buttons-cont");
+var btn = btnCont.getElementsByClassName("home-promohead-button");
+for (var i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("promohead-btn-active");
+    current[0].className = current[0].className.replace(" promohead-btn-active", "");
+    this.className += " promohead-btn-active";
+  });
+}
+
+
 
 //Filtering Videos
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
 var x, i;
 x = document.getElementsByClassName("video");
