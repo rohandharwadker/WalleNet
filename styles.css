@@ -13,6 +13,7 @@ button
 {
     outline: 0 none;
 }
+* {box-sizing:border-box} 
 .head {
     padding-left:10px;
     padding-top:0px;
@@ -64,13 +65,6 @@ button
   .footer-right{
     text-align:center
   }
-}
-.standard-btn{
-  border:none;
-  border-radius: 25px;
-  color:white;
-  padding:15px;
-  font-size:large;
 }
 .navbar{
   overflow: hidden;
@@ -124,10 +118,6 @@ button
   background-color:rgb(238, 237, 237);
   transition:.2s;
 }
-#avion-mobile-body {
-  display:none;
-}
-
 
 .navbar a#home-active {
   background-color: #003489;
@@ -160,7 +150,56 @@ button
 .textdec_none {
   text-decoration: none;
 }
+.add_button {
+  background: none;
+  border: 2px rgb(187, 187, 187) solid;
+  border-radius: 4px;
+  padding: 10px;
+  transition:.5s;
+}
+.add_button a {
+  color:gray;
+  font-weight: bold;
+  text-decoration: none;
+}
+.add_button:hover {
+  background-color:rgb(70, 70, 70);
+  border-color:rgb(70, 70, 70);
+  transform: scale(1.1);
+  transition:.5s;
+}
+.add_button:hover a {
+  color:white;
+}
+.standard-btn{
+  border:none;
+  border-radius: 25px;
+  color:white;
+  padding:15px;
+  font-size:large;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #003489;
+
+}
 
 
 
@@ -202,13 +241,10 @@ button
 
 
 /* Home */
-.home-header{
-  margin-top: 1%;
-}
 .home-wbpromohead{
   background-color:black;
   color:white;
-  padding:10%;
+  padding:13%;
   background-image: url('pics/wblogo_purple.png');
   background-position: 85%;
   background-size:30%;
@@ -218,7 +254,7 @@ button
 .home-avpromohead{
   background-color: #f1f1f1;
   color:black;
-  padding:10%;
+  padding:13%;
   background-image: url('pics/avion_logo.png');
   background-position: 85%;
   background-size:20%;
@@ -240,7 +276,6 @@ button
   margin:1% 10px;
   border-radius:30px;
   padding:5px;
-  background-color:white;
   border: solid 5px gray;
 }
 .promohead-btn-active{
@@ -248,6 +283,12 @@ button
 }
 
 @media screen and (max-width:1080px){
+  .home-header{
+    margin-top:0;
+  }
+  .home-promohead-button{
+    margin-top:3%;
+  }
   .home-wbpromohead,.home-avpromohead{
     background-image:none;
     text-align: center;
@@ -385,6 +426,32 @@ button
 
 
 /* Website Builder */
+.beforeandafter{
+  width: 300px;
+  height: 300px;
+  overflow:hidden;
+  position: relative;
+}
+.before, .after{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  overflow:hidden;
+  transition: 1s;
+  z-index: 2;
+}
+.after{
+z-index: 1;
+background-color:blue;
+}
+.before {
+  background-color:red;
+}
+
+.beforeandafter:hover .before{
+height:0px;
+}
+
 .wb-head{
   text-align:center;
   width:25%;
@@ -654,517 +721,158 @@ button
 
 
 /* Avion */
-@media screen and (max-width: 1070px){
-  #avion-mobile-body {
-    text-align:center;
-    padding:10px;
-    margin:10px;
-    background-color:rgb(240, 240, 240);
-    border-radius:50px;
-    display:inline-block;
-  }
-  #avion-body {
-    display:none;
-  }
-}
-
-.secondary {
-  color: gray;
-  text-align:center;
-  margin:25px;
-  padding:25px;
-}
-
-.song_container {
-  padding:10px;
-  margin:20px;
-}
-.gold {
-  color:gold;
-}
-input {
-  padding:10px;
-  border-top:#004bc4 solid 2px;
-  border-left: #004bc4 solid 2px;
-  border-right:#003489 solid 2px;
-  border-bottom:#003489 solid 2px;
-  border-radius:15px;
-}
-.settings{
-  margin:25px;
-  margin-top:0px;
-  border:3px solid grey;
-}
-.settings-section {
-  margin:25px;
-  padding:30px;
-  margin-top:0px;
-}
-.settings-head {
-  margin:25px;
-  padding:25px;
-  margin-bottom: 0px;
-  background-color:#004bc4;
-  color:white;
-  font-size:20px;
-}
-.hr-settings{
-  margin-right:30px;
-  margin-left:30px;
-  background-color:grey;
-  height: 1px;
-  border:none;
-}
-.cl_date {
-  padding:10px;
-  background-color:black;
-  color:white;
-}
-.app {
-  background-color: #fcfcfc;
-  display: inline-block;
-  border:#ebebeb solid 2px;
-  width:10%;
-  padding:20px;
-  margin:20px;
-  border-radius:10px;
-  text-align:center;
-  margin:80px;
-}
-.buy_button {
-  padding:5px;
-  border:none;
-  background-color:blue;
-  border: solid 1.5px black;
-  color:white;
-  border-radius:5px;
-}
-.app_img {
-  border: black solid 2px;
-  border-radius: 5px;
-}
-.app_desc {
-  color:#fcfcfc;
-  font-size: 12px;
-  height:0px;
-  transition:.5s;
-}
-.app_head{
-  padding:10px;
-  margin: 20px;
-  color:#e6e6e6
-}
-@media screen and (max-width:1080px){
-  .app_head{
-    margin:auto;
-    text-align:center;
-  }
-}
-.pro-logo {
-  color:black;
-  padding:10px;
-  padding-top:16px;
-  padding-bottom:8px;
-  background-color:purple;
-  font-family: 'Turret Road', cursive;
-}
-.pro-sublogo {
-  background-color: rgb(70,0,70);
-  padding:11px;
-  color:purple;
-}
-.app:hover > .app_top {
-  background-color:white;
-}
-.app:hover > .app_desc {
-  height:100px;
-  background-color:white;
-  color:grey;
-}
-.app:hover > .app_author {
-  background-color:white;
-}
-.app:hover {
-  border: 2px solid black;
-  background-color: red;
-  background-size: cover;
-  background-position: center;
-  transition: .5s;
-}
-.cl_text {
-  color:grey;
-}
-.learn_section{
-  display:inline-block;
-  color:#00550e;
-  margin:30px;
-  padding:30px;
-  width:20%;
-  height:180px;
-  border-radius: 25px;
-  border:2px solid #00550e;
-}
-
-.about-wn {
-  background-color:rgb(226, 226, 226);
-  margin:50px;
-  padding:20px;
-  border-radius:25px;
-  text-align:center;
-}
-.about-wn hr {
-  background-color:#003489;
-  border:1px solid #003489;
-}
-.insta-btn{
-  font-size:60px;
-  border:none;
-  background: linear-gradient(45deg, #ffc422, #e626ff);
-  border-radius:10px;
-  padding:2px 10px;
-  color:white;
-}
-
-
-.learn-button {
-  border-radius: 4px;
-  background-color: green;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  float:right;
-}
-
-.learn-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.learn-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.learn-button:hover span {
-  padding-right: 25px;
-}
-
-.learn-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.add_button {
-  background: none;
-  border: 2px rgb(187, 187, 187) solid;
-  border-radius: 4px;
-  padding: 10px;
-  transition:.5s;
-}
-.add_button a {
-  color:gray;
-  font-weight: bold;
-  text-decoration: none;
-}
-.add_button:hover {
-  background-color:rgb(70, 70, 70);
-  border-color:rgb(70, 70, 70);
-  transform: scale(1.1);
-  transition:.5s;
-}
-.add_button:hover a {
-  color:white;
-}
-.add_button_pro {
-  background: none;
-  border: 2px rgb(187, 187, 187) solid;
-  border-radius: 4px;
-  padding: 10px;
-  transition:.5s;
-}
-.add_button_pro a {
-  color:gray;
-  font-weight: bold;
-  text-decoration: none;
-  color:rgb(70, 0, 70)
-}
-.add_button_pro:hover {
-  background-color:rgb(70, 0, 70);
-  border-color:rgb(70, 0, 70);
-  font-size:15px;
-  transition:.5s;
-}
-.add_button_pro:hover a {
-  color:white;
-}
-
-
-
-
-
-
-
-
-/* test */
-
-.beforeandafter{
-  width: 300px;
-  height: 300px;
-  overflow:hidden;
-  position: relative;
-}
-.before, .after{
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  overflow:hidden;
-  transition: 1s;
-  z-index: 2;
-}
-.after{
-z-index: 1;
-background-color:blue;
-}
-.before {
-  background-color:red;
-}
-
-.beforeandafter:hover .before{
-height:0px;
-}
-
-
-
-
-
-
-
-
-
-/* 
-slideshow */
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: none;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  background-color:black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@-webkit-keyframes slide {
-    0% {left:0px}
-    50% {left:500px}
-    100%{left:1000px}
-}
-@keyframes slide {
-    0% {left:0px}
-    50% {left:500px}
-    100%{left:1000px}
-}
-
-.slide {
-    height:500px;
-}
-
-
-
-
-
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-/* Bottom left text */
-.bottom-left {
-  background-color:black;
-  position: absolute;
-  bottom: 20px;
-  left: 40px;
-  color:white;
-}
-
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 100px;
-  left: 16px;
-}
-
-.app-container{
-  text-align:center;
-  background-color:black;
-  border:2px solid darkgray;
-  color:white;
-  padding:60px;
-  margin-top:0px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:100px;
-  width:25%;
-}
-.app-cover{
-  width:80px;
-  height:80px;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-.app-button{
-  border:none;
-  border-radius:10px;
-  padding:10px;
-  color:white;
-  font-weight: bold;
-  background-color:#F26522;
-}
-.apps{
-  color:white;
-  background-color:black;
-  margin:0px;
-  padding:10px;
-  margin-bottom:0px;
-  text-align:center;
-}
-.game_add {
-  /*set bg size, pos, and url in style tag*/
+.avion-head{
+  padding: 16% 7%;
+  color: #3d3d3d;
+  background-color:#f1f1f1;
+  background-image: url('pics/avion_logo_rotated.png');
+  background-position-x: 120%;
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin:0px;
 }
-@media screen and (max-width: 1070px) {
-  #avion-splash {
+.avion-gamehead{
+  text-align:center;
+  padding:1%;
+}
+.avion-gamehead-button{
+  text-decoration: none;
+  margin:0% 2%;
+}
+.avion-gamehead-button img{
+  width:2%;
+  border-radius: 20px;
+  transition:.2s;
+}
+.avion-gamehead-button img:hover{
+  border-radius: 5px;
+  transform: scale(3);
+  transition:.2s;
+}
+
+
+.avion-different{
+  display:flex;
+  background-color:black;
+}
+.avion-different-text{
+  width:50%;
+  padding:10%;
+  color:white;
+}
+.avion-different-video-cont{
+  width:50%;
+  margin:auto;
+}
+.avion-different-video{
+  width:100%;
+}
+
+
+.avion-app{
+  display:flex;
+  background-size: cover;
+}
+.avion-app-text{
+  width:50%;
+  padding:10%;
+  background-color:rgba(0,0,0,.8);
+  color:white;
+}
+.avion-app-img-cont{
+  width:50%;
+  margin:auto;
+  text-align: center;
+}
+.avion-app-img{
+  width:40%;
+  border:10px solid rgba(0,0,0,.2);
+  border-radius:25px;
+}
+.avion-download-btn{
+  border:solid white 1px;
+  border-radius:5px;
+  background-color: #F26522;
+  color:white;
+  padding:2%;
+  font-weight:bolder;
+}
+
+
+@media screen and (max-width: 700px){
+  .avion-head{
+    background-image: url("pics/avion_logo_rotated.png");
+    background-position: center;
+    background-size:250%;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.8);
+    text-align:center;
+    padding: 40% 7%;
+  }
+  .avion-gamehead-button img {
+    width:10%;
+  }
+  .avion-gamehead-button img:hover {
+    border-radius: 20px;
+    transform: scale(1);
+  }
+  .avion-different{
+    display:block;
+    background:none;
+  }
+  .avion-different-text{
+    width:100%;
+    padding:5% 2%;
+    text-align:center;
+    background-color:#F26522;
+  }
+  .avion-different-video-cont{
+    width:100%;
+    background-color: black;
+  }
+  .avion-app-text{
+    width:100%;
+    text-align:center;
+  }
+  .avion-app-img-cont{
     display:none;
   }
 }
-.game-container {
-  padding-top:10px;
-  padding-bottom:10px;
-  text-align:center;
-}
-.game-sub-container {
-  margin-left:auto;
-  margin-right:auto;
-}
-.game-desc{
-  background-color: rgba(0,0,0,0.5);
-  border: 2px solid white;
-  color:white;
-  margin:100px;
-  padding:100px;
-  margin-bottom:0px;
-}
-.game-info{
-  background-color: rgba(0,0,0,0.9);
-  border: 2px solid white;
-  color:white;
-  padding:30px;
-  margin:50px;
-  margin-top:0px;
-  text-align:center;
-  display:inline-block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clock Faces */
 .cf-head {
   padding:150px;
   margin-top:25px;
@@ -1234,37 +942,80 @@ slideshow */
 .cf-section-head{
   color:gray;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius:5px;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius:5px;
-}
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #003489;
 
-}
-.avion_add {
-  background-image: url('pics/ff_graphic.png');
-  background-repeat: no-repeat;
-  background-position: 70%;
-  background-size: 160%;
-  background-attachment: fixed;
-}
 
-/* Tutorials page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Developers page */
 .tutorial-head-cont{
   position: sticky;
   top:0;
@@ -1471,4 +1222,72 @@ iframe {
   iframe{
     width:95%;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About */
+.about-wn {
+  background-color:rgb(226, 226, 226);
+  margin:50px;
+  padding:20px;
+  border-radius:25px;
+  text-align:center;
+}
+.about-wn hr {
+  background-color:#003489;
+  border:1px solid #003489;
+}
+.insta-btn{
+  font-size:60px;
+  border:none;
+  background: linear-gradient(45deg, #ffc422, #e626ff);
+  border-radius:10px;
+  padding:2px 10px;
+  color:white;
 }
