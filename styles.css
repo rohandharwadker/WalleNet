@@ -89,7 +89,6 @@ button
 }
 .navbar a.nav-right{
   float: right;
-  padding-bottom:0;
 }
 .navbar .icon {
   display: none;
@@ -826,6 +825,74 @@ height:0px;
     display:none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pages */
+.pages-head {
+  text-align: center;
+  font-size: xx-large;
+  color:gray;
+}
+.pages-page-cont{
+  text-decoration: none;
+}
+.pages-page{
+  margin:4% 10%;
+  padding:4%;
+  border: 20px solid #f1f1f1;
+  background-color:#f1f1f1;
+  color:#4d4d4d;
+  background-size:25%;
+  background-position:100%;
+  background-repeat: no-repeat;
+  transition:.2s;
+}
+.pages-page:hover{
+  transform: scale(1.01);
+  background-color:#ccc;
+  border-color: #ccc;
+  transition:.2s;
+}
+
+
+
+
+
 
 
 
