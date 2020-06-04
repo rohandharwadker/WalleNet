@@ -241,26 +241,33 @@ button
 
 
 /* Home */
+.home-tab {
+  padding:13%;
+  background-repeat:no-repeat;
+  display:none;
+}
 .home-wbpromohead{
   background-color:black;
   color:white;
-  padding:13%;
   background-image: url('pics/wblogo_purple.png');
   background-position: 85%;
   background-size:30%;
   background-repeat: no-repeat;
-  display:none;
+}
+.home-asteroidspromohead{
+  background-color: black;
+  color:white;
+  background-image: url('pics/asteroids_logo.png');
+  background-position: 85%;
+  background-size:20%;
 }
 .home-avpromohead{
   background-color: #f1f1f1;
   color:black;
-  padding:13%;
   background-image: url('pics/avion_logo.png');
   background-position: 85%;
   background-size:20%;
-  background-repeat: no-repeat;
-  display:none;
-} 
+}
 .home-promohead-content{
   width:50%;
 }
