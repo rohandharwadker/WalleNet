@@ -295,7 +295,7 @@ button
   .home-promohead-button{
     margin-top:3%;
   }
-  .home-wbpromohead,.home-avpromohead{
+  .home-wbpromohead,.home-avpromohead, .home-asteroidspromohead{
     background-image:none;
     text-align: center;
   }
