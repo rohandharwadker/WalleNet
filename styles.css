@@ -199,8 +199,18 @@ button
   background: #003489;
 
 }
-
-
+.text-strike {
+  position: relative;
+}
+.text-strike::after {
+  border-bottom: 0.125em solid red;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 
 
 
