@@ -1263,10 +1263,6 @@ iframe {
 }
 
 
-
-
-
-
 .new-label{
   display:none;
   transition: .5s;
@@ -1322,23 +1318,10 @@ iframe {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* About */
+.about-head{
+  text-align:center;
+}
 .about-wn {
   background-color:rgb(226, 226, 226);
   margin:50px;
