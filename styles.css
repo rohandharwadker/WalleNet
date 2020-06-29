@@ -872,47 +872,6 @@ height:0px;
 
 
 
-/* Pages */
-.pages-head {
-  text-align: center;
-  font-size: xx-large;
-  color:gray;
-}
-.pages-page-cont{
-  text-decoration: none;
-}
-.pages-page{
-  margin:4% 10%;
-  padding:4%;
-  border: 20px solid #f1f1f1;
-  background-color:#f1f1f1;
-  color:#4d4d4d;
-  background-size:25%;
-  background-position:100%;
-  background-repeat: no-repeat;
-  transition:.2s;
-}
-.pages-page:hover{
-  transform: scale(1.01);
-  background-color:#ccc;
-  border-color: #ccc;
-  transition:.2s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1143,224 +1102,6 @@ height:0px;
 
 
 
-/* Developers page */
-.tutorial-head-cont{
-  position: sticky;
-  top:0;
-}
-.tutorial-else{
-  background-color:white;
-  position:sticky;
-  top:0;
-  z-index:10;
-}
-.tutorial-head-bg-image{
-  background-image:url('pics/coding.png');
-  background-size:cover;
-  background-repeat:none;
-  background-attachment: fixed;
-  padding-top:25%;
-  padding-bottom:25%;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-}
-.tutorial-head{
-  background-color:white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
-  padding: 20px;
-  text-align: center;
-}
-.tutorial-head h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 5px solid #f80042; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 2px; /* Adjust as needed */
-  animation: 
-    type 1s steps(13, end),
-    blink-cursor .6s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes type {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: #f80042; }
-}
-.tutorial-intro{
-  background-color:white;
-  padding:11%;
-}
-.tutorial-intro-content{
-  background-color:#f80042;
-  border-radius: 100px;
-  padding:11%;
-}
-.tutorial-intro-content h1{
-  color:white;
-}
-.tutorial-intro-content p{
-  color:white;
-}
-.videos-head{
-  color:gray;
-  padding:10px;
-  text-align:center;
-}
-.chip {
-  display: inline-block;
-  width:20%;
-  padding: 0 25px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
-  background-color: #f1f1f1;
-  transition: .5s;
-}
-.chip:hover{
-  background-color: #FF0000;
-  color:white;
-  transform: rotateY(360deg);
-  transition: .5s;
-}
-.chip img {
-  float: left;
-  margin: 0 10px 0 -25px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-iframe {
-  background-color:lightgray;
-  padding:10px;
-  display:block;
-  margin:auto;
-}
-.videos{
-  text-align:center;
-  transition: .5s;
-  display:inline-block;
-  width:100%;
-}
-#video-filter-button-container{
-  text-align: center;
-  margin:2%;
-}
-.video-filter-button{
-  border:none;
-  background-color:lightgray;
-  padding:15px;
-  margin:5px;
-  font-size: large;
-  color:black;
-  border-radius: 10px;
-  transition:.2s;
-}
-.video-filter-button:hover:not(.vfb-active){
-  background-color:rgb(185, 184, 184);
-  transition:.2s;
-}
-.vfb-active{
-  background-color:#f80042;
-  color:white;
-}
-.video{
-  height:15%;
-  width:45%;
-  padding:10px;
-  margin:10px;
-  background-color:lightgray;
-  display:none;
-}
-.video-show {
-  display:inline-block;
-}
-.video-button-cont{
-  display:inline-block;
-}
-.video-button{
-  padding:10px;
-  background-color:rgb(0, 110, 255);
-  border:none;
-  border-radius:25px;
-}
-.video-button i {
-  color:white;
-}
-.video-button span {
-  display:none;
-  color:white;
-}
-.video-button a {
-  text-decoration: none;
-}
-.video-button:hover span {
-  display:block;
-  padding:5px;
-}
-.video-button:hover i {
-  display:none;
-}
-@media screen and (max-width:1070px){
-  .video{
-    width:94%;
-  }
-  .video-button i {
-    display:none;
-  }
-  .video-button span {
-    display:block;
-  }
-}
-
-
-.new-label{
-  display:none;
-  transition: .5s;
-}
-.chip:hover .new-label{
-  display:inline-block;
-  transition: .5s;
-}
-.chip:hover .yt-name{
-  display:none;
-  transition: .5s;
-}
-@media screen and (max-width:1070px){
-  .tutorial-head-cont{
-    display:none;
-  }
-  .chip{
-    width:80%;
-  }
-  iframe{
-    width:95%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1402,3 +1143,54 @@ iframe {
   padding:2px 10px;
   color:white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
