@@ -1051,8 +1051,13 @@ height:0px;
   color:white;
   font-size:xx-large;
 }
-
-
+.faq-question{
+  padding:1%;
+  margin:2% 15% 0;
+}
+.faq-question h2 {
+  color:darkgreen;
+}
 
 
 
