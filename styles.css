@@ -1054,6 +1054,7 @@ height:0px;
 .faq-question{
   padding:1%;
   margin:2% 15% 0;
+  text-align: center;
 }
 .faq-question h2 {
   color:darkgreen;
