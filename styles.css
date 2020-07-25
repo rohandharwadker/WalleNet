@@ -1109,6 +1109,13 @@ height:0px;
 
 
 /* 3D Printing */
+.printing-producthead{
+  padding:18% 5%;
+  background-image:url("pics/Products/PhoneStandRound.png");
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x:90%;
+}
 .printing-head{
   padding:15% 2%;
   background-color:#78001e;
@@ -1183,6 +1190,9 @@ height:0px;
   background-color:#f1f1f1;
   border-radius:50px;
   line-height: 10px;
+}
+.printing-upload .left img {
+  width:25%;
 }
 .printing-upload hr {
   border:solid 2px #ccc;
@@ -1260,6 +1270,117 @@ height:0px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Products */
+.products-head{
+  text-align:center;
+  padding:3%;
+  background-color:#003489;
+  color:white;
+  margin:0 0 2%;
+  font-size:x-large;
+}
+.products-container{
+  text-align:center;
+}
+.products-product{
+  background-color:#f1f1f1;
+  margin:1%;
+  display:inline-block;
+  padding: 2%;
+  border-radius: 2%;
+  text-align:center;
+  width:28%;
+  transition: transform .2s;
+  vertical-align: middle;
+}
+.products-product form{
+  float:right;
+  text-align: right;
+}
+.products-product img{
+  width:40%;
+}
+.products-shipping{
+  color:gray;
+  line-height: 1px;
+}
+.products-product .content{
+  display:inline-block;
+  width:60%;
+  float:right;
+  text-align:right;
+  vertical-align: middle;
+}
+.products-product p:not(.products-shipping) {
+  display:inline-block;
+}
+.products-product .content span{
+  font-weight: bolder;
+}
+.products-product:hover{
+  transform:scale(1.01);
+  transition:.2s;
+  background-color:#e8e8e8;
+}
+.products-comingsoon{
+  text-align:center;
+  font-size:larger;
+  color:gray;
+  margin:10% 0;
+}
+@media screen and (max-width:1800px){
+  .products-product{
+    width:40%;
+  }
+}
+@media screen and (max-width:1220px){
+  .products-product{
+    width:60%;
+  }
+}
+@media screen and (max-width:780px){
+  .products-product{
+    width:90%;
+    font-size:large;
+  }
+  .products-product .content{
+    display:inline-block;
+    float:none;
+    text-align:center;
+  }
+  .products-product form{
+    float:none;
+    text-align:center;
+    display:inline-block;
+  }
+  .products-product:hover{
+    transform:scale(1);
+    background-color:#f1f1f1;
+  }
+}
 
 
 
