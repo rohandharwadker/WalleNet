@@ -154,7 +154,7 @@ button
   border: 2px rgb(187, 187, 187) solid;
   border-radius: 4px;
   padding: 10px;
-  transition:.5s;
+  transition:.1s;
 }
 .add_button a {
   color:gray;
@@ -165,7 +165,7 @@ button
   background-color:rgb(70, 70, 70);
   border-color:rgb(70, 70, 70);
   transform: scale(1.1);
-  transition:.5s;
+  transition:.1s;
 }
 .add_button:hover a {
   color:white;
