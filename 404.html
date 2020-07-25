@@ -29,12 +29,34 @@ permalink: /404.html
     font-family: "Google Sans","Roboto","Arial",sans-serif;
   }
   img{
-    width:70%;
+    width:50%;
   }
   @media screen and (max-width:1000px){
     img{
       width:100%;
     }
+    button:hover span{
+      display: none;
+    }
+  }
+  button{
+    border:white solid 2px;
+    background:none;
+    color:white;
+    padding:10px;
+    transition:transform .1s;
+  }
+  button span{
+    display: none;
+  }
+  button:hover{
+    background-color:white;
+    color:#003489;
+    transform:scale(1.1);
+    transition:.1s;
+  }
+  button:hover span{
+    display: inline-block;
   }
 </style>
 
@@ -42,8 +64,8 @@ permalink: /404.html
   <div>
     <img src="pics/404.png"/>
   </div>
-  <h1>These are not the pages you're looking for.</h1>
-  <h3>It appears the page you're looking for doesn't exist.</h3>
-  <a href="index" style="color:white;">Return Home</a>
+  <h1>404</h1>
+  <h3>These are not the pages you're looking for.</h3>
+  <a href="index" style="color:white;"><button>Move Along <span>- Return to Home Page</span></button></a>
 </body>
 </html>
