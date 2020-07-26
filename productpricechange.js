@@ -9,4 +9,15 @@ function updatePrice(){
 		WNPPS1_Price.innerHTML = "$4.99";
 		console.log("updated price of WNPPS1 to White");
 	}
+
+	var WNPWC_Select =  document.getElementById('select-WNPWC');
+	var WNPWC_Price = document.getElementById('price-WNPWC');
+	if (WNPWC_Select.value == "Black"){
+		WNPWC_Price.innerHTML = "$1.99";
+		console.log("updated price of WNPWC to Black");
+	}
+	else{
+		WNPWC_Price.innerHTML = "$0.99";
+		console.log("updated price of WNPWC to White");
+	}
 }
