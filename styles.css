@@ -1444,6 +1444,10 @@ height:0px;
 .productpage-info h4{
   color:gray;
 }
+.paypal-form{
+  line-height:200%;
+}
+
 @media screen and (max-width:1200px){
   .productpage-info .content{
     width:50%;
@@ -1462,6 +1466,9 @@ height:0px;
   }
   .productpage-info img{
     width:50%;
+  }
+  .paypal-form table{
+    display:inline-block;
   }
 }
 @media screen and (max-width:615px){

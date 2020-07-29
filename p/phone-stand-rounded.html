@@ -9,7 +9,7 @@
 
   <title>Phone Stand Rounded - WN Products</title>
 
-  <link rel="icon" href="../  pics/WN_logo3.png">
+  <link rel="icon" href="../pics/WN_logo3.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="../styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -36,11 +36,24 @@
     </div>
 
     <div class="productpage-info">
-      <img src="../pics/Products/PhoneStandRound.png"/>
+      <img id="WNPPS1_Image" src="../pics/Products/PhoneStandRound.png"/>
       <div class="content">
         <h1>Phone Stand (Rounded)</h1>
-        <h2>$4.99</h2>
+        <h2 id="WNPPS1_Price">$4.99</h2>
         <h4>+ Free Shipping</h4>
+        <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0" id="WNPPS1_Select" onchange="updatePrice()">
+            <option value="White">White $4.99 USD</option>
+            <option value="Black">Black $6.99 USD</option>
+          </select> </td></tr>
+          </table>
+          <br>
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
         <p>
           With a flush, smooth design, this phone stand will enhance your home office. Simple craftsmanship allows you to use your device in portrait or landscape mode with ease and good visibility.
         </p>
