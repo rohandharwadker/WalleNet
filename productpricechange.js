@@ -4,7 +4,7 @@ function updatePrice(){
 		var WNPPS1_Price = document.getElementById('WNPPS1_Price');
 		var WNPPS1_Image = document.getElementById('WNPPS1_Image');
 		if (WNPPS1_Select.value == "Black"){
-			WNPPS1_Price.innerHTML = "$6.49";
+			WNPPS1_Price.innerHTML = "$6.99";
 			WNPPS1_Image.src = "../pics/Products/PhoneStandRound-Black.png"
 			console.log("updated price of WNPPS1 to Black");
 		}
