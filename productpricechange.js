@@ -43,6 +43,7 @@ function updatePrice(){
 		var WNPCN_Select =  document.getElementById('WNPCN_Select');
 		var WNPCN_Price = document.getElementById('WNPCN_Price');
 		var WNPCN_Image = document.getElementById('WNPCN_Image');
+		var WNPCN_Name = document.getElementById('WNPCN_Name');
 		if (WNPCN_Select.value == "Black"){
 			WNPCN_Price.innerHTML = "$5.49";
 			WNPCN_Image.src = "../pics/Products/customNameplate-Black.png"
@@ -53,6 +54,7 @@ function updatePrice(){
 			WNPCN_Image.src = "../pics/Products/customNameplate.png"
 			console.log("updated price of WNPCN to White");
 		}
+		console.log(WNPCN_Name.value)
 	}
 	catch{
 		console.log("itemnotfound: WNPCN")

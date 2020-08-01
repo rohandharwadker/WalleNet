@@ -1138,6 +1138,10 @@ height:0px;
   padding:2%;
   text-align:center;
 }
+.printing-howitworks a{
+  color:white;
+  text-decoration: none;
+}
 .printing-howitworks h1{
   font-size:300%;
 }
