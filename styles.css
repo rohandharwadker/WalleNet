@@ -1434,6 +1434,10 @@ height:0px;
 
 
 /* ProductPage */
+.productpage-back{
+  position:absolute;
+  padding:1% 1%;
+}
 .productpage-info{
   padding:10%;
 }

@@ -34,6 +34,9 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <div class="productpage-back">
+      <a href="../products"><button class="standard-btn" style="background-color:#003489;font-size:small;">&#8592; Back to All Products</button></a>
+    </div>
 
     <div class="productpage-info">
       <img id="WNPCN_Image" src="../pics/Products/customNameplate.png"/>
@@ -48,15 +51,16 @@
             <option value="White">White $3.99 USD</option>
             <option value="Black">Black $5.49 USD</option>
           </select> </td></tr>
-          <tr><td><input id="WNPCN_Name" type="hidden" name="on1" value="Name">Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+          <tr><td><input type="hidden" name="on1" value="Name">Name</td></tr><tr><td><input id="WNPCN_Name" onkeyup="checkText()" type="text" name="os1" maxlength="10"></td></tr>
           </table>
           <br>
           <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <input style="display:none" id="WNPCN_Submit" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
+        <p id="WNPCN_Warning" style="color:red">Please enter a name.</p>
         <p>
-          The perfect addition to your home office or the perfect nametag for your work desk. Customizable to any name or word that does not exceed 10 letters.
+          The perfect addition to your home office or the perfect nametag for your work desk. Customizable to any name or word that does not exceed 10 letters. Note: larger words/names will use smaller text.
         </p>
         <p>
           <span style="font-weight: bold">Dimensions</span> Height: 24-32mm

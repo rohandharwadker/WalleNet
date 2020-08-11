@@ -19,25 +19,6 @@ function updatePrice(){
 	}
 
 
-	try{
-		var WNPWC_Select =  document.getElementById('WNPWC_Select');
-		var WNPWC_Price = document.getElementById('WNPWC_Price');
-		var WNPWC_Image = document.getElementById('WNPWC_Image');
-		if (WNPWC_Select.value == "Black"){
-			WNPWC_Price.innerHTML = "$2.99";
-			WNPWC_Image.src = "../pics/Products/webcamCover-Black.png"
-			console.log("updated price of WNPWC to Black");
-		}
-		else{
-			WNPWC_Price.innerHTML = "$1.99";
-			WNPWC_Image.src = "../pics/Products/webcamCover.png"
-			console.log("updated price of WNPWC to White");
-		}
-	}
-	catch{
-		console.log("itemnotfound: WNPWC")
-	}
-
 
 	try{
 		var WNPCN_Select =  document.getElementById('WNPCN_Select');
@@ -60,4 +41,20 @@ function updatePrice(){
 		console.log("itemnotfound: WNPCN")
 	}
 
+}
+function checkText(){
+	var WNPCN_Name = document.getElementById('WNPCN_Name');
+	var WNPCN_Submit = document.getElementById('WNPCN_Submit');
+	var WNPCN_Warning = document.getElementById('WNPCN_Warning');
+	var nametext = WNPCN_Name.value;
+	if (nametext.length < 1){
+		console.log('textlength 0');
+		WNPCN_Warning.style.display = 'block';
+		WNPCN_Submit.style.display = 'none';
+	}
+	else{
+		console.log('textlength > 0');
+		WNPCN_Warning.style.display = 'none';
+		WNPCN_Submit.style.display = 'block';
+	}
 }
