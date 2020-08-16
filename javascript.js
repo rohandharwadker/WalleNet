@@ -1,5 +1,4 @@
 //Navbar
-
 var width = window.innerWidth;
 
 function collapse() {
@@ -22,71 +21,22 @@ var currentScrollPos = window.pageYOffset;
 
 
 
-//Filtering Videos
-filterTab("filter-1");
-function filterTab(c) {
-    var x, i;
-    x = document.getElementsByClassName("home-tab");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        removeClass(x[i], "promo-show");
-        if (x[i].className.indexOf(c) > -1) addClass(x[i], "promo-show");
-    }
-}
-var btnCont = document.getElementById("home-promohead-buttons-cont");
-var btn = btnCont.getElementsByClassName("home-promohead-button");
-for (var i = 0; i < btn.length; i++) {
-  btn[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("promohead-btn-active");
-    current[0].className = current[0].className.replace(" promohead-btn-active", "");
-    this.className += " promohead-btn-active";
-  });
-}
+// Animation
+;(function($, win) {
+  $.fn.inViewport = function(cb) {
+     return this.each(function(i,el){
+       function visPx(){
+         var H = $(this).height(),
+             r = el.getBoundingClientRect(), t=r.top+100, b=r.bottom;
+         return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+       } visPx();
+       $(win).on("resize scroll", visPx);
+     });
+  };
+}(jQuery, window));
 
 
 
-//Filtering Videos
-filterSelection("all");
-function filterSelection(c) {
-var x, i;
-x = document.getElementsByClassName("video");
-if (c == "all") c = "";
-for (i = 0; i < x.length; i++) {
-    removeClass(x[i], "video-show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "video-show");
-}
-}
-
-function addClass(element, name) {
-var i, arr1, arr2;
-arr1 = element.className.split(" ");
-arr2 = name.split(" ");
-for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-}
-}
-
-function removeClass(element, name) {
-var i, arr1, arr2;
-arr1 = element.className.split(" ");
-arr2 = name.split(" ");
-for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-    arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-}
-element.className = arr1.join(" ");
-}
-
-//Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("video-filter-button-container");
-var btns = btnContainer.getElementsByClassName("video-filter-button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("vfb-active");
-    current[0].className = current[0].className.replace(" vfb-active", "");
-    this.className += " vfb-active";
-  });
-}
-
-
+$(".animation").inViewport(function(px){
+    if(px) $(this).addClass("animationTrigger") ;
+});
