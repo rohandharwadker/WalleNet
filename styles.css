@@ -815,7 +815,12 @@ height:0px;
   padding:2%;
   font-weight:bolder;
 }
-
+.avion-donate{
+  background-color:#3d3d3d;
+  color:white;
+  padding:10%;
+  text-align:center;
+}
 
 @media screen and (max-width: 700px){
   .avion-head{
