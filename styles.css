@@ -1363,6 +1363,7 @@ height:0px;
 }
 .products-product img{
   width:40%;
+  padding:1%;
 }
 .products-product .content{
   display:inline-block;
