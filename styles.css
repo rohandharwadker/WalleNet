@@ -1543,6 +1543,82 @@ height:0px;
 
 
 
+/* Developers Page */
+.developers-head{
+  background-color:#101010;
+  color:white;
+  padding:15% 5%;
+  font-size:x-large;
+}
+.developers-project{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-color:#111111;
+  background-attachment: fixed;
+  text-align:center;
+}
+.developers-project-content{
+  background-color:rgba(0,0,0,.8);
+  color:white;
+  padding:10%;
+}
+.developers-project-content-header{
+  margin:0 20%;
+}
+.developers-project-content-header h1{
+  font-size: 50px;
+}
+.developers-download-btn{
+  border:white solid 2px; 
+  background:none;
+  color:white;
+  padding:10px;
+  transition:transform .1s;
+}
+.developers-download-btn:hover{
+  background-color:white;
+  color:#003489;
+  transform:scale(1.1);
+  transition:.1s;
+}
+.developers-project-content-lower{
+  background-color:#111111;
+  color:white;
+  padding:5%;
+}
+.developers-project-content-lower-left, .developers-project-content-lower-right{
+  width:30%;
+  display:inline-block;
+  margin:0 2%;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
