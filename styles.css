@@ -1545,7 +1545,7 @@ height:0px;
 
 /* Developers Page */
 .developers-head{
-  background-color:#101010;
+  background-color:#003489;
   color:white;
   padding:15% 5%;
   font-size:x-large;
@@ -1556,6 +1556,7 @@ height:0px;
   background-color:#111111;
   background-attachment: fixed;
   text-align:center;
+  margin:5%;
 }
 .developers-project-content{
   background-color:rgba(0,0,0,.8);
@@ -1591,6 +1592,27 @@ height:0px;
   display:inline-block;
   margin:0 2%;
   vertical-align: middle;
+}
+@media screen and (max-width:1000px){
+  .developers-head{
+    text-align:center;
+  }
+  .developers-project{
+    margin: 5% 0;
+    background-attachment: scroll;
+    background-position-y:-10%;
+  }
+  .developers-project-content{
+    background-color:rgba(0,0,0,0.9);
+  }
+  .developers-project-content-header{
+    margin: 0;
+  }
+  .developers-project-content-lower-left, .developers-project-content-lower-right{
+    display:block;
+    width:100%;
+    margin:10% 0;
+  }
 }
 
 
