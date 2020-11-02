@@ -998,6 +998,12 @@ height:0px;
 .cf-help-section2{
   background-color:#3d3d3d;
 }
+.cf-topwarning{
+  background-color:red;
+  text-align: center;
+  color:white;
+  padding:1%;
+}
 @media screen and (max-width:815px){
   .cf-head{
     background-size:290%;
