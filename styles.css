@@ -1004,6 +1004,12 @@ height:0px;
   color:white;
   padding:1%;
 }
+.cf-topnotice{
+  background-color:green;
+  text-align: center;
+  color:white;
+  padding:1%;
+}
 @media screen and (max-width:815px){
   .cf-head{
     background-size:290%;
