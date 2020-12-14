@@ -1558,53 +1558,45 @@ height:0px;
 
 /* Developers Page */
 .developers-head{
-  background-color:#003489;
+  background-image:url("pics/WN-empowering-knowledge.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
   color:white;
   padding:15% 5%;
   font-size:x-large;
 }
-.developers-project{
-  background-repeat: no-repeat;
-  background-position:center;
-  background-color:#111111;
-  background-attachment: fixed;
-  text-align:center;
-  margin:5%;
-}
-.developers-project-content{
-  background-color:rgba(0,0,0,.8);
-  color:white;
+.developers-lefttxt-rightimg{
   padding:10%;
+  background-position: 85%;
+  background-size: 25%;
+  background-repeat:no-repeat;
 }
-.developers-project-content-header{
-  margin:0 20%;
+.developers-centertxt{
+  padding:5%;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
 }
-.developers-project-content-header h1{
-  font-size: 50px;
+.developers-centertxt p{
+  background-color: #003489;
+  color:white;
+  padding:1%;
+  margin:2% 0;
 }
 .developers-download-btn{
-  border:white solid 2px; 
+  border:#003489 solid 2px; 
   background:none;
-  color:white;
+  color:#003489;
   padding:10px;
   transition:transform .1s;
 }
 .developers-download-btn:hover{
-  background-color:white;
-  color:#003489;
+  background-color:#003489;
+  color:white;
   transform:scale(1.1);
   transition:.1s;
-}
-.developers-project-content-lower{
-  background-color:#111111;
-  color:white;
-  padding:5%;
-}
-.developers-project-content-lower-left, .developers-project-content-lower-right{
-  width:30%;
-  display:inline-block;
-  margin:0 2%;
-  vertical-align: middle;
 }
 @media screen and (max-width:1000px){
   .developers-head{
