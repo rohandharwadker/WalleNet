@@ -1571,15 +1571,33 @@ height:0px;
   background-position: 85%;
   background-size: 25%;
   background-repeat:no-repeat;
+  background-image:url('pics/WN-empowering-knowledge-text.png')
 }
-.developers-centertxt{
+.developers-centertxt-top{
   padding:5%;
   text-align:center;
   background-size:cover;
   background-position:center;
   background-repeat: no-repeat;
+  background-image: url('pics/3489curve.png');
 }
-.developers-centertxt p{
+.developers-centertxt-bottom{
+  padding:5% 5% 10%;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-image: url('pics/3489curve-flipped.png');
+  padding-top:10%;
+  background-position-y:0%;
+}
+.developers-centertxt-top p{
+  background-color: #003489;
+  color:white;
+  padding:1%;
+  margin:2% 0;
+}
+.developers-centertxt-bottom p{
   background-color: #003489;
   color:white;
   padding:1%;
@@ -1601,22 +1619,30 @@ height:0px;
 @media screen and (max-width:1000px){
   .developers-head{
     text-align:center;
+    background-image:none;
+    background-color:#003489;
   }
-  .developers-project{
-    margin: 5% 0;
-    background-attachment: scroll;
-    background-position-y:-10%;
+  .developers-lefttxt-rightimg{
+    padding:20% 0;
+    background-image:none;
+    text-align:center;
   }
-  .developers-project-content{
-    background-color:rgba(0,0,0,0.9);
+  .developers-centertxt-top{
+    padding:0;
+    background-image:none;
   }
-  .developers-project-content-header{
-    margin: 0;
+  .developers-centertxt-bottom{
+    padding:0;
+    background-image:none;
   }
-  .developers-project-content-lower-left, .developers-project-content-lower-right{
-    display:block;
+  .developers-centertxt-bottom img{
     width:100%;
-    margin:10% 0;
+  }
+  .developers-centertxt-top p{
+    padding:1% 0;
+  }
+  .developers-centertxt-bottom p{
+    padding:1% 0;
   }
 }
 
