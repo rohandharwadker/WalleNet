@@ -1589,7 +1589,9 @@ height:0px;
   background-position: 85%;
   background-size: 25%;
   background-repeat:no-repeat;
-  background-image:url('pics/WN-empowering-knowledge-text.png')
+}
+.developers-lefttxt-rightimg .content{
+  width:50%;
 }
 .developers-centertxt-top{
   padding:5%;
@@ -1598,6 +1600,22 @@ height:0px;
   background-position:center;
   background-repeat: no-repeat;
   background-image: url('pics/3489curve.png');
+}
+.developers-centertxt-middle{
+  padding:5% 5% 10%;
+  text-align:center;
+  background-color:#003489;
+  padding-top:10%;
+  background-position-y:0%;
+  color:white;
+}
+.developers-centertxt-middle .developers-download-btn{
+  border-color:white;
+  color:white;
+}
+.developers-centertxt-middle .developers-download-btn:hover{
+  background-color: white;
+  color:#003489;
 }
 .developers-centertxt-bottom{
   padding:5% 5% 10%;
@@ -1620,6 +1638,11 @@ height:0px;
   color:white;
   padding:1%;
   margin:2% 0;
+}
+.developers-projects{
+  text-align:center;
+  color:gray;
+  padding: 5%;
 }
 .developers-download-btn{
   border:#003489 solid 2px; 
