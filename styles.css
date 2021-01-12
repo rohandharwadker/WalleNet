@@ -1557,13 +1557,17 @@ height:0px;
 
 
 /* Developers Page */
-.developers-head{
+.developers-head
+{
+  background-color:#003489;
+}
+.developers-head .content{
   background-image:url("pics/WN-empowering-knowledge.png");
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: 50%;
   background-repeat:no-repeat;
   color:white;
-  padding:15% 5%;
+  padding:5% 5%;
   font-size:x-large;
 }
 .developers-nav{
