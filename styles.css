@@ -1597,6 +1597,9 @@ height:0px;
 .developers-lefttxt-rightimg .content{
   width:50%;
 }
+#developers-quicklaunch{
+  background-image: url('pics/QuickLaunch5.png');
+}
 #developers-asteroids2{
   background-image: url('pics/asteroids2.gif');
 }
@@ -1681,20 +1684,12 @@ height:0px;
     text-align:center;
     width:100%;
   }
-  #developers-asteroids2{
+  .developers-lefttxt-rightimg{
     background-position: center;
     background-size: cover;
-    box-shadow: inset 1000px 0 0 0 rgba(255,255,255,0.7); 
-  }
-  #developers-avionbw{
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 1000px 0 0 0 rgba(255,255,255,0.7); 
-  }
-  #developers-empowerknowledge{
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 1000px 0 0 0 rgba(255,255,255,0.7);
+    box-shadow: inset 1000px 0 0 0 rgba(255,255,255,0.8);
+    margin:5%;
+    border-radius:5%;
   }
   .developers-centertxt-bottom{
     background-image:none;
