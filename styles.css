@@ -422,12 +422,6 @@ button
   color:black;
   font-weight: bold;
 }
-@media screen and (max-width:1080px){
-  .home-subhead-left,.home-subhead-right {
-    display:block;
-    width:100%;
- }
-}
 .home-head{
   padding: 19% 3%;
   background-repeat:no-repeat;
@@ -468,6 +462,10 @@ button
     box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.8);
     padding: 70% 3%;
   }
+  .home-subhead-left,.home-subhead-right {
+    display:block;
+    width:100%;
+ }
   .home-subhead .content{
     width:100%;
     padding:2% 2% 7%;
