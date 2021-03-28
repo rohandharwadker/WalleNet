@@ -118,30 +118,11 @@ button
   transition:.2s;
 }
 
-.navbar a#home-active {
+.navbar a#active {
   background-color: #003489;
   color:white;
 }
-.navbar a#wb-active {
-  background-color: rgb(70, 0, 70);
-  color:white;
-}
-.navbar a#av-active {
-  background-color: #F26522;
-  color:white;
-}
-.navbar a#cf-active {
-  background-color: darkgreen;
-  color:white;
-}
-.navbar a#pr-active {
-  background-color: #ff0040;
-  color:white;
-}
-.navbar a#about-active {
-  background-color: #003489;
-  color:white;
-}
+
 .fas {
   font-size: 20px;
   color:#999999;
