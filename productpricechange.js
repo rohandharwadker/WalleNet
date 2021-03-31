@@ -89,21 +89,21 @@ function updatePrice(){
 			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$164";
 			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
-			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_LED.innerHTML = "No LED Power Circle";
 			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini Pro 4GB RAM"){
 			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$174";
 			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
-			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_LED.innerHTML = "No LED Power Circle";
 			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini Pro 8GB RAM"){
 			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$184";
 			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
-			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_LED.innerHTML = "No LED Power Circle";
 			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 	}
