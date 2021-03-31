@@ -700,7 +700,39 @@ button
 .hardwareitem-compare-item img{
   width:70%;
 }
-
+@media screen and (max-width: 1080px){
+  .hardwareitem-buy .content-left{
+    display: none;
+  }
+  .hardwareitem-buy .content-right{
+    float:right;
+    margin-right: 2%;
+  }
+  .hardwareitem-head-image{
+    margin-top:10%;
+  }
+  .hardwareitem-head-image img{
+    width:90%;
+  }
+  .hardwareitem-subhead .content-top,.hardwareitem-subhead .content-bottom{
+    width:95%;
+  }
+  .hardwareitem-poweredbypi{
+    margin:30% 0;
+  }
+  .hardwareitem-poweredbypi .content-left,.hardwareitem-poweredbypi .content-right{
+    display: initial;
+    margin:1%;
+    text-align: center;
+  }
+  .hardwareitem-compare-item{
+    vertical-align: top;
+    margin:0 1%;
+  }
+  .hardwareitem-compare-item .content-top h1{
+    font-size: 300%;
+  }
+}
 
 
 
