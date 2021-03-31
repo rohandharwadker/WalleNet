@@ -46,6 +46,8 @@ function updatePrice(){
 		var WNPNM_Select =  document.getElementById('WNPNM_Select');
 		var WNPNM_Price = document.getElementById('WNPNM_Price');
 		var WNPNM_Image = document.getElementById('WNPNM_Image');
+		var WNPNM_LED = document.getElementById('WNPNM_LED');
+		var WNPNM_FAN = document.getElementById('WNPNM_FAN');
 		/*
 		<option value="Mini 2GB RAM">Mini 2GB RAM $109.00 USD</option>
 		<option value="Mini 4GB RAM">Mini 4GB RAM $119.00 USD</option>
@@ -56,39 +58,53 @@ function updatePrice(){
 		<option value="Mini Pro 8GB RAM">Mini Pro 8GB RAM $184.00 USD</option>
 		*/
 		if (WNPNM_Select.value == "Mini 2GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini"
+			WNPNM_Title.innerHTML = "Net Mini";
 			WNPNM_Price.innerHTML = "$109";
-			WNPNM_Image.src = "../pics/Products/netmini-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netmini-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "No Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini 4GB RAM"){
 			WNPNM_Title.innerHTML = "Net Mini"
 			WNPNM_Price.innerHTML = "$119";
-			WNPNM_Image.src = "../pics/Products/netmini-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netmini-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "No Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini+ 2GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini+"
+			WNPNM_Title.innerHTML = "Net Mini+";
 			WNPNM_Price.innerHTML = "$119";
-			WNPNM_Image.src = "../pics/Products/netmini+-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netmini+-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "30mm Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini+ 4GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini+"
+			WNPNM_Title.innerHTML = "Net Mini+";
 			WNPNM_Price.innerHTML = "$129";
-			WNPNM_Image.src = "../pics/Products/netmini+-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netmini+-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "30mm Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini Pro 2GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini Pro"
+			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$164";
-			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini Pro 4GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini Pro"
+			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$174";
-			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 		else if (WNPNM_Select.value == "Mini Pro 8GB RAM"){
-			WNPNM_Title.innerHTML = "Net Mini Pro"
+			WNPNM_Title.innerHTML = "Net Mini Pro";
 			WNPNM_Price.innerHTML = "$184";
-			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png"
+			WNPNM_Image.src = "../pics/Products/netminipro-clipart.png";
+			WNPNM_LED.innerHTML = "LED Power Circle";
+			WNPNM_FAN.innerHTML = "30mm Ultra Cooling Fan";
 		}
 	}
 	catch{
