@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The official site for WalleNet">
+  <meta name="author" content="WalleNet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Net Mini - WN Products</title>
+
+  <link rel="icon" href="../pics/WN_logo3.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
+
+</head>
+
+<body id="bodytag">
+    <a id="index_top"></a>
+    <h3 class="head animated bounceInLeft delay-0.5s">Walle<span style="color:#003489">Net</span></h3>
+
+    <div class="navbar" id="myNavbar">
+      <a href="../index">Home</a>
+      <a href="../software">Software</a>
+      <a href="../hardware">Hardware</a>
+      <a href="../clockfaces">Clock Faces</a>
+      <a href="../3dprinting">3D Printing</a>
+      <a href="../developers">Developers</a>
+      <a href="../about" class="nav-right">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="collapse()">
+          <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="productpage-back">
+      <a href="../3dprinting"><button class="standard-btn" style="background-color:#003489;font-size:small;">&#8592; Back to All Products</button></a>
+    </div>
+
+    <div class="productpage-info">
+      <div class="content">
+        <h1 id="WNPNM_Title">Net Mini</h1>
+        <h2 id="WNPNM_Price">$109</h2>
+        <h4>+ Free Shipping to Austin Area</h4>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Model">Model</td></tr><tr><td><select name="os0" id="WNPNM_Select" onchange="updatePrice()">
+            <option value="Mini 2GB RAM">Mini 2GB RAM $109.00 USD</option>
+            <option value="Mini 4GB RAM">Mini 4GB RAM $119.00 USD</option>
+            <option value="Mini+ 2GB RAM">Mini+ 2GB RAM $119.00 USD</option>
+            <option value="Mini+ 4GB RAM">Mini+ 4GB RAM $129.00 USD</option>
+            <option value="Mini Pro 2GB RAM">Mini Pro 2GB RAM $164.00 USD</option>
+            <option value="Mini Pro 4GB RAM">Mini Pro 4GB RAM $174.00 USD</option>
+            <option value="Mini Pro 8GB RAM">Mini Pro 8GB RAM $184.00 USD</option>
+          </select> </td></tr>
+          </table>
+          <br/>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+        </form>
+        <p>Raspbian OS</p>
+        <p>Broadcom BCM2711 Processor (armv71)</p>
+        <p>2 USB 2.0 Ports, 2 USB 3.0 Ports</p>
+        <p>Gigabit Ethernet Port</p>
+        <p>USB-C Power (Included)</p>
+        <p>3.5mm Audio-Out Jack</p>
+        <p>Dual 4k micro-HDMI ports</p>
+        <p>LED Power Circle</p>
+        <p>No Cooling Fan</p>
+      </div>
+      <img id="WNPNM_Image" src="../pics/Products/netmini-clipart.png"/>
+
+    </div>
+
+    <div class="footer" style="background-color:#003489;">
+        <div style="text-align:center;">
+            <!-- <button class="add_button"><a href="#bodytag">Back to Top</a></button> -->
+        </div>
+        <div class="footer-lower footer-left">
+            <p>Products - WalleNet</p>
+        </div>
+        <div class="footer-lower footer-right">
+            <p><a href="../about">About Us</a></p>
+            <p>Visit us on <a target="_blank" href="https://instagram.com/officialwallenet/">Instagram</a></p>
+            <p><a href="mailto:rohand.wallenet@gmail.com">Contact Us</a></p>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../javascript.js"></script>
+    <script type="text/javascript" src="../productpricechange.js"></script>
+</body>
+</html>
