@@ -507,7 +507,7 @@ button
   color:black;
 }
 .hardware-item {
-  width:40%;
+  width:20%;
   margin:2%;
   padding:2%;
   background-color:lightgray;
@@ -526,7 +526,19 @@ button
 }
 .hardware-item-image {
   width:70%;
-  height:70%;
+}
+@media screen and (max-width: 1200px){
+  .hardware-item{
+    width:40%;
+  }
+}
+@media screen and (max-width: 600px){
+  .hardware-item{
+    width: 90%;
+  }
+  .hardware-item h1{
+    font-size: xx-large;
+  }
 }
 
 
