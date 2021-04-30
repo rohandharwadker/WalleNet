@@ -871,21 +871,22 @@ button
   color:white;
   padding:1%;
 }
-@media screen and (max-width:815px){
+@media screen and (max-width:870px){
   .cf-head{
     background-size:290%;
     text-align:center;
     padding: 40% 7%;
   }
+  .cf-nav a{
+    padding:4% 28%;
+    font-size:larger;
+    display: inline-block;
+    line-height: 50px;
+  }
 }
 @media screen and (max-width:650px){
   .cf-nav{
     padding:4%;
-  }
-  .cf-nav a{
-    padding:4% 28%;
-    font-size:larger;
-    line-height: 50px;
   }
 }
 @media screen and (max-width:1070px){
