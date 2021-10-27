@@ -427,6 +427,8 @@ button
   display:flex;
   align-items: center;
   justify-content: space-between;
+  background-image:linear-gradient(-45deg,rgb(195, 0, 255),rgb(0, 132, 255));
+  background-attachment: fixed;
 }
 .home-main .content{
   width:40%;
@@ -448,6 +450,23 @@ button
 }
 .home-secondary .content a{
   color:white;
+}
+@media screen and (max-width:900px){
+  .home-main{
+    flex-direction: column-reverse;
+    padding: 5% 2%;
+  }
+  .home-main .content{
+    text-align: center;
+  }
+  .home-main .content:first-child, .home-main .content:last-child{
+    margin: 15% 0;
+    width:100%;
+  }
+  .home-secondary{
+    margin:0;
+  }
+
 }
 
 
