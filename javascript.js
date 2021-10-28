@@ -26,7 +26,7 @@ var currentScrollPos = window.pageYOffset;
   $.fn.inViewport = function(cb) {
      return this.each(function(i,el){
        function visPx(){
-         var H = $(this).height()-$(this).height()*.2,
+         var H = $(this).height(),
              r = el.getBoundingClientRect(), t=r.top+100, b=r.bottom;
          return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
        } visPx();

@@ -92,6 +92,12 @@
         </div>
     </div>
 
+    <div class="devapp-github animation aFadeUp">
+        <h1>Open Source &#9745;</h1>
+        <p>QuickLaunch 6.0.0 is available on our Github.</p>
+        <a href="https://github.com/WalleNet/QuickLaunch" target="_blank"><button class="add_button">Go to Github</button></a>
+    </div>
+
     <a id="how-it-works"></a>
     <div class="devapp-howtouse">
         <div class="content-head">
@@ -124,6 +130,51 @@
         </div>
     </div>
 
+    <a id="installation-instructions"></a>
+    <div class="devapp-howtouse">
+        <div class="content-head">
+            <h1 class="gradienttext-fff-fff-333 animation aFadeLeft">Installation Instructions</h1>
+            <p class="animation aFadeLeft">How to properly install QuickLaunch to ensure the best experience.</p>
+        </div>
+        <div class="content-item">
+            <h1 class="animation aFadeLeft">Download.</h1>
+            <p class="animation aFadeUp">Begin by downloading QuickLaunch from our website.</p>
+            <a class="animation aFadeUp" href="#download"><button class="add_button">Go to Download</button></a>
+        </div>
+        <div class="content-item">
+            <h1 class="animation aFadeLeft">Install.</h1>
+            <p class="animation aFadeUp">
+                Next, you'll need to install QuickLaunch via PyInstaller. Open a new terminal window (search 
+                for 'Command Prompt' in the Start menu) and navigate to where you stored the QuickLaunch 
+                Download. For example, if you are at the path C:/users/john/ and QuickLaunch is located
+                at C:/Users/JohnSmith/OneDrive/Desktop/QuickLaunch/dist/QuickLaunch/QuickLaunch.exe , you would use the
+                following command to navigate to the QuickLaunch directory:
+            </p>
+            <p class="content-code animation aFadeUp">
+                cd C:/Users/JohnSmith/OneDrive/Desktop/QuickLaunch/dist/QuickLaunch
+            </p>
+            <p class="animation aFadeUp">
+                Then, once in this directory, run the following command to install PyInstaller:
+            </p>
+            <p class="content-code animation aFadeUp">
+                pip install pyinstaller
+            </p>
+            <p class="animation aFadeUp">
+                Next, install QuickLaunch using PyInstaller with the following command:
+            </p>
+            <p class="content-code animation aFadeUp">
+                pyinstaller -w --onedir QuickLaunch.py
+            </p>
+        </div>
+        <div class="content-item">
+            <h1 class="animation aFadeLeft">Finish.</h1>
+            <p class="animation aFadeUp">
+                Finally, move the logo.png file to the newly created dist/QuickLaunch directory.
+                <span style="font-weight:bold;">The program will not run without this step, so do not skip it.</span>
+            </p>
+        </div>
+    </div>
+
     <a id="download"></a>
     <div class="devapp-download animation aFadeUp">
         <h1>Download QuickLaunch</h1>
@@ -136,6 +187,7 @@
             <a class="content-title" href="#bodytag">QuickLaunch</a>
             <a href="#new">What's New</a>
             <a href="#how-it-works">How it Works</a>
+            <a href="#installation-instructions">Installation</a>
         </div>
         <div class="content-right">
             <a href="#download"><button>Download</button></a>

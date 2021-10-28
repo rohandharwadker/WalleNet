@@ -594,6 +594,14 @@ button
   font-size: 250%;
   color:white;
 }
+.devapp-github{
+  margin-bottom: 10%;
+  color:white;
+  font-size: xx-large;
+  text-align:center;
+  border-radius: 20px;
+  color:#ccc;
+}
 .devapp-howtouse{
   background-color:#181818;
   padding:5%;
@@ -621,6 +629,13 @@ button
 .devapp-howtouse .content-item .content-image img{
   width: 70%;
 }
+.devapp-howtouse .content-item .content-code{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:large;
+  padding:1%;
+  border-radius:5px;
+  background-color:#333;
+}
 .devapp-sticky-footer{
   display: flex;
   align-items: center;
@@ -637,13 +652,13 @@ button
   display: flex;
   justify-content:left;
   align-items: center;
-  width:40%;
+  width:50%;
 }
 .devapp-sticky-footer .content-right{
   justify-content: right  ;
 }
 .devapp-sticky-footer .content-left a, .devapp-sticky-footer .content-right a{
-  margin:0 5%;
+  margin:0 3%;
   transition: color .2s;
 }
 .devapp-sticky-footer .content-left a:hover, .devapp-sticky-footer .content-right a:hover{
@@ -759,6 +774,15 @@ button
     border-radius: 0;
     padding: 20% 10%;
     font-size: x-large;
+  }
+  .devapp-github{
+    margin:10% 0;
+    border-radius: 0;
+    padding: 20% 10%;
+    font-size: x-large;
+  }
+  .devapp-github h1{
+    font-size: 200%;
   }
   .devapp-download-button{
     padding:3%;
