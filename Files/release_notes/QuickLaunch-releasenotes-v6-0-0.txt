@@ -1,0 +1,25 @@
+QuickLaunch v6.0.0 Release Notes
+Developed in Austin, Texas, USA by Rohan Dharwadker
+Version 6 initial development start: 10/12/2021
+
+(NEW) In-app setup
+-eliminate config.py file
+-move all variables from config into main file
+
+(NEW) Settings page
+-Add/remove apps by selecting paths and assigning names
+-Hide launch hints
+-Change the default browser (used for 'g' and 'yt' commands)
+-Delete save data
+-Help/How to use button
+
+Bug Fixes
+-fix QL does not close on exit on first use
+-fix space bar not calling command to autofill
+-fix capital letters not autofilling
+-fix browser not opening using 'g' and 'yt'
+
+Backend Changes
+-switch from tkinter packing to placing
+-add constants for background colors
+-divide root into Tkinter.Frame()s, mainFrame and settingsFrame
