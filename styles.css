@@ -622,6 +622,7 @@ button
 }
 .devapp-howtouse .content-item p{
   font-size: x-large;
+  overflow-wrap: break-word;
 }
 .devapp-howtouse .content-item .content-image{
   text-align: center;
