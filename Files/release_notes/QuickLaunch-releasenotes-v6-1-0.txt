@@ -1,0 +1,10 @@
+QuickLaunch v6.1.0 Release Notes
+October 28th 2021
+Developed in Austin, Texas, USA by Rohan Dharwadker
+Version 6 initial development start: 10/12/2021
+
+(NEW) Advanced Suggestion
+-Alt program suggestion now shows shortest length program that contains currently entered text if no autofills are available
+
+(NEW) Include Icon File
+-QuickLaunch directory now includes a 'logo.ico' file to be set as the shortcut icon
